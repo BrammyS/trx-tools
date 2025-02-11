@@ -1,19 +1,18 @@
-﻿namespace trx_tools.Core.Models.TestDefinitions;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
+
+namespace trx_tools.Core.Models.TestDefinitions;
 
 [Serializable]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
 public class TestMethod
 {
-    [System.Xml.Serialization.XmlAttributeAttribute("codeBase")]
-    public required string CodeBase { get; set; }
+    [XmlAttribute("codeBase")] public required string CodeBase { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("adapterTypeName")]
-    public required string AdapterTypeName { get; set; }
+    [XmlAttribute("adapterTypeName")] public required string AdapterTypeName { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("className")]
-    public required string ClassName { get; set; }
+    [XmlAttribute("className")] public required string ClassName { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("name")]
-    public required string Name { get; set; }
+    [XmlAttribute("name")] public required string Name { get; set; }
 }

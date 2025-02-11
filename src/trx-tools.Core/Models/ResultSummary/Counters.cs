@@ -1,55 +1,42 @@
-﻿namespace trx_tools.Core.Models.ResultSummary;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
+
+namespace trx_tools.Core.Models.ResultSummary;
 
 [Serializable]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010")]
 public class Counters
 {
-    [System.Xml.Serialization.XmlAttributeAttribute("total")]
-    public uint Total { get; set; }
+    [XmlAttribute("total")] public uint Total { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("executed")]
-    public uint Executed { get; set; }
+    [XmlAttribute("executed")] public uint Executed { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("passed")]
-    public uint Passed { get; set; }
+    [XmlAttribute("passed")] public uint Passed { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("failed")]
-    public uint Failed { get; set; }
+    [XmlAttribute("failed")] public uint Failed { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("error")]
-    public uint Error { get; set; }
+    [XmlAttribute("error")] public uint Error { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("timeout")] 
-    public uint Timeout { get; set; }
+    [XmlAttribute("timeout")] public uint Timeout { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("aborted")]
-    public uint Aborted { get; set; }
+    [XmlAttribute("aborted")] public uint Aborted { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("inconclusive")]
-    public uint Inconclusive { get; set; }
+    [XmlAttribute("inconclusive")] public uint Inconclusive { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("passedButRunAborted")]
-    public uint PassedButRunAborted { get; set; }
+    [XmlAttribute("passedButRunAborted")] public uint PassedButRunAborted { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("notRunnable")]
-    public uint NotRunnable { get; set; }
+    [XmlAttribute("notRunnable")] public uint NotRunnable { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("notExecuted")]
-    public uint NotExecuted { get; set; }
+    [XmlAttribute("notExecuted")] public uint NotExecuted { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("disconnected")]
-    public uint Disconnected { get; set; }
+    [XmlAttribute("disconnected")] public uint Disconnected { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("warning")]
-    public uint Warning { get; set; }
+    [XmlAttribute("warning")] public uint Warning { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("completed")]
-    public uint Completed { get; set; }
+    [XmlAttribute("completed")] public uint Completed { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("inProgress")]
-    public uint InProgress { get; set; }
+    [XmlAttribute("inProgress")] public uint InProgress { get; set; }
 
-    [System.Xml.Serialization.XmlAttributeAttribute("pending")]
-    public uint Pending { get; set; }
+    [XmlAttribute("pending")] public uint Pending { get; set; }
 }
