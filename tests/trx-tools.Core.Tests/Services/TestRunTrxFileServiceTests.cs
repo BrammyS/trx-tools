@@ -1,11 +1,12 @@
-﻿using FluentAssertions;
+﻿using System.Text.Json;
+using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
-using Newtonsoft.Json;
 using NUnit.Framework;
 using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Services;
+using trx_tools.Core.Tests.TestConverters;
 
 namespace trx_tools.Core.Tests.Services;
 
@@ -49,8 +50,11 @@ public class TestRunTrxFileServiceTests
         var result = service.ReadTestRun(trxFile);
 
         // Assert
-        result.Times.Creation = result.Times.Creation.ToUniversalTime(); // Fixing time zone issue
-        var json = JsonConvert.SerializeObject(result, Formatting.Indented);
+        var json = JsonSerializer.Serialize(result, new JsonSerializerOptions
+        {
+            WriteIndented = true,
+            Converters = { new UtcDateTimeConverter() }
+        });
         json.Should().Be(expectedJson);
     }
     
