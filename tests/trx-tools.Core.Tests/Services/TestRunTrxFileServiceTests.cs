@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using Newtonsoft.Json;
 using NUnit.Framework;
+using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Services;
 
@@ -48,8 +49,24 @@ public class TestRunTrxFileServiceTests
         var result = service.ReadTestRun(trxFile);
 
         // Assert
+        result.Times.Creation = result.Times.Creation.ToUniversalTime(); // Fixing time zone issue
         var json = JsonConvert.SerializeObject(result, Formatting.Indented);
         json.Should().Be(expectedJson);
+    }
+    
+    [Test]
+    public void ReadTestRun_Should_Throw_Exception_When_File_Does_Not_Exist()
+    {
+        // Arrange
+        var mockLogger = new Mock<ILogger<TestRunTrxFileService>>();
+        var service = new TestRunTrxFileService(mockLogger.Object);
+        var trxFile = Path.Combine(AppContext.BaseDirectory, "TestFiles", "non_existent_file.trx");
+
+        // Act
+        Action act = () => service.ReadTestRun(trxFile);
+
+        // Assert
+        act.Should().Throw<TrxFileDoesNotExistException>();
     }
     
     [Test]

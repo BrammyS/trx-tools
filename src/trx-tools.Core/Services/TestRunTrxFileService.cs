@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using Microsoft.Extensions.Logging;
+using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Services.Interfaces;
 
@@ -13,17 +14,22 @@ public class TestRunTrxFileService : ITestRunTrxFileService
     {
         _logger = logger;
     }
-    
+
     public TestRun ReadTestRun(string filePath)
     {
+        if (!File.Exists(filePath))
+        {
+            throw new TrxFileDoesNotExistException($"TRX file does not exist at path {filePath}");
+        }
+
         var serializer = new XmlSerializer(typeof(TestRun), "http://microsoft.com/schemas/VisualStudio/TeamTest/2010");
         using var fs = File.OpenRead(filePath);
         var deserializedTestRun = serializer.Deserialize(fs);
-        if(deserializedTestRun is null)
+        if (deserializedTestRun is null)
         {
             throw new NullReferenceException("Deserialized test run is null");
         }
-        
+
         return (TestRun)deserializedTestRun;
     }
 
