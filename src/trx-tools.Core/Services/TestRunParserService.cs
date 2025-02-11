@@ -6,20 +6,13 @@ using trx_tools.Core.Services.Interfaces;
 
 namespace trx_tools.Core.Services;
 
-public class TestRunParserService : ITestRunParserService
+public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestRunParserService
 {
-    private readonly ILogger<TestRunParserService> _logger;
-
-    public TestRunParserService(ILogger<TestRunParserService> logger)
-    {
-        _logger = logger;
-    }
-
     public ParsedTestRun ParseTestRun(TestRun testRun)
     {
         ArgumentNullException.ThrowIfNull(testRun, nameof(testRun));
         
-        _logger.LogInformation("Parsing test run");
+        logger.LogInformation("Parsing test run");
         var parsedResults = new List<ParsedUnitTestResult>();
         foreach (var testEntry in testRun.TestEntries)
         {
@@ -29,9 +22,9 @@ public class TestRunParserService : ITestRunParserService
                 throw new UnitTestDataNotFoundException($"Could not find test definition for test entry with ID {testEntry.TestId}");
             }
 
-            if (_logger.IsEnabled(LogLevel.Debug))
+            if (logger.IsEnabled(LogLevel.Debug))
             {
-                _logger.LogDebug("unitTest found for test entry with ID {TestId}", testEntry.TestId);
+                logger.LogDebug("unitTest found for test entry with ID {TestId}", testEntry.TestId);
             }
 
             var testResult = testRun.Results.FirstOrDefault(x => x.ExecutionId == testEntry.ExecutionId);
@@ -40,9 +33,9 @@ public class TestRunParserService : ITestRunParserService
                 throw new TestResultDataNotFoundException($"Could not find test result for test entry with execution ID {testEntry.ExecutionId}");
             }
 
-            if (_logger.IsEnabled(LogLevel.Debug))
+            if (logger.IsEnabled(LogLevel.Debug))
             {
-                _logger.LogDebug("testResult found for test entry with execution ID {ExecutionId}", testEntry.ExecutionId);
+                logger.LogDebug("testResult found for test entry with execution ID {ExecutionId}", testEntry.ExecutionId);
             }
 
             if (testResult.TestId != testEntry.TestId)
@@ -59,7 +52,7 @@ public class TestRunParserService : ITestRunParserService
             ));
         }
         
-        _logger.LogInformation("Parsed {Count} test results", parsedResults.Count);
+        logger.LogInformation("Parsed {Count} test results", parsedResults.Count);
         return new ParsedTestRun(
             testRun.Times,
             parsedResults,

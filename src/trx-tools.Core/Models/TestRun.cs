@@ -13,9 +13,9 @@ namespace trx_tools.Core.Models;
 [XmlRoot(Namespace = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010", IsNullable = false)]
 public class TestRun
 {
-    public required Times Times { get; set; }
+    public required Times? Times { get; set; }
 
-    public required TestSettings.TestSettings TestSettings { get; set; }
+    public required TestSettings.TestSettings? TestSettings { get; set; }
 
     [XmlArrayItem("UnitTestResult", IsNullable = false)]
     public required UnitTestResult[] Results { get; set; }

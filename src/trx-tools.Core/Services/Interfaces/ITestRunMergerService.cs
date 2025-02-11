@@ -4,5 +4,5 @@ namespace trx_tools.Core.Services.Interfaces;
 
 public interface ITestRunMergerService
 {
-    Task<TestRun> MergeTestListsAsync(IEnumerable<TestRun> testRuns);
+     TestRun MergeTestRuns(List<TestRun> testRuns);
 }

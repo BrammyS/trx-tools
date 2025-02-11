@@ -17,7 +17,7 @@ namespace trx_tools.Core.Tests.Services;
 public class TestRunParserServiceTests
 {
     [Test]
-    public void ParseTestRun_WhenTestRunIsNull_ThrowsArgumentNullException()
+    public void ParseTestRun_When_TestRun_Is_Null_Should_Throws_ArgumentNullException()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<TestRunParserService>>();
@@ -31,7 +31,7 @@ public class TestRunParserServiceTests
     }
 
     [Test]
-    public void ParseTestRun_WhenTestDefinitionNotFound_ThrowsUnitTestDataNotFoundException()
+    public void ParseTestRun_When_TestDefinition_NotFound_Throws_UnitTestDataNotFoundException()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<TestRunParserService>>();
@@ -66,7 +66,7 @@ public class TestRunParserServiceTests
     }
 
     [Test]
-    public void ParseTestRun_WhenTestResultNotFound_ThrowsTestResultDataNotFoundException()
+    public void ParseTestRun_When_TestResult_NotFound_Throws_TestResultDataNotFoundException()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<TestRunParserService>>();
@@ -117,7 +117,7 @@ public class TestRunParserServiceTests
     }
 
     [Test]
-    public void ParseTestRun_WhenTestIdMismatch_ThrowsTestIdsMismatchException()
+    public void ParseTestRun_When_TestId_Mismatch_Throws_TestIdsMismatchException()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<TestRunParserService>>();
@@ -183,7 +183,7 @@ public class TestRunParserServiceTests
     }
 
     [Test]
-    public void ParseTestRun_WhenTestResultIsPassed_ParsesTestResult()
+    public void ParseTestRun_When_TestResult_Is_Passed_Parses_TestResult()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<TestRunParserService>>();

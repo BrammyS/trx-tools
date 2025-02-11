@@ -6,15 +6,8 @@ using trx_tools.Core.Services.Interfaces;
 
 namespace trx_tools.Core.Services;
 
-public class TestRunTrxFileService : ITestRunTrxFileService
+public class TestRunTrxFileService(ILogger<TestRunTrxFileService> logger) : ITestRunTrxFileService
 {
-    private readonly ILogger<TestRunTrxFileService> _logger;
-
-    public TestRunTrxFileService(ILogger<TestRunTrxFileService> logger)
-    {
-        _logger = logger;
-    }
-
     public TestRun ReadTestRun(string filePath)
     {
         if (!File.Exists(filePath))
@@ -35,7 +28,7 @@ public class TestRunTrxFileService : ITestRunTrxFileService
 
     public string[] FindTrxFilesInDirectory(string directoryPath)
     {
-        _logger.LogInformation("Finding TRX files in directory {DirectoryPath}", directoryPath);
+        logger.LogInformation("Finding TRX files in directory {DirectoryPath}", directoryPath);
         return Directory.GetFiles(directoryPath, "*.trx", SearchOption.AllDirectories);
     }
 }
