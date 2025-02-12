@@ -25,7 +25,10 @@ public static class TimeSpanExtensions
             values.Add($"{timeSpan.Seconds}s");
         }
 
-        values.Add(timeSpan.Milliseconds > 0 ? $"{timeSpan.Milliseconds}ms" : "< 1ms");
+        if (timeSpan.Milliseconds > 0)
+            values.Add($"{timeSpan.Milliseconds}ms");
+        else if (values.Count == 0)
+            values.Add("< 1ms");
 
         return string.Join(" ", values);
     }
