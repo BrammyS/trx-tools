@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trx-tools.Reporting.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trx-tools.Reporting", "src\trx-tools.Reporting\trx-tools.Reporting.csproj", "{D4B3124F-6E36-46FC-95A1-E76B36BA467E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trx-tools.Commands", "trx-tools.Commands\trx-tools.Commands.csproj", "{F59BA4DA-A72F-49CD-8F93-7E5A4BF32169}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trx-tools.Commands", "src\trx-tools.Commands\trx-tools.Commands.csproj", "{3CDAF83C-F3B0-4092-9873-8A8F70276567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,7 +24,7 @@ Global
 		{B98EFF97-A287-440D-8AA7-D0C1D89C3DF4} = {1F55782B-EA12-4CB8-BD86-68B194372F7D}
 		{2C123336-0E57-47E1-9DA6-F99DC0225DA8} = {513D0F59-9642-4C70-9A9C-D29AFA958308}
 		{D4B3124F-6E36-46FC-95A1-E76B36BA467E} = {1F55782B-EA12-4CB8-BD86-68B194372F7D}
-		{F59BA4DA-A72F-49CD-8F93-7E5A4BF32169} = {1F55782B-EA12-4CB8-BD86-68B194372F7D}
+		{3CDAF83C-F3B0-4092-9873-8A8F70276567} = {1F55782B-EA12-4CB8-BD86-68B194372F7D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E4F433A8-1A0A-43AE-82E4-06496D3E5D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -43,9 +43,9 @@ Global
 		{D4B3124F-6E36-46FC-95A1-E76B36BA467E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4B3124F-6E36-46FC-95A1-E76B36BA467E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4B3124F-6E36-46FC-95A1-E76B36BA467E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F59BA4DA-A72F-49CD-8F93-7E5A4BF32169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F59BA4DA-A72F-49CD-8F93-7E5A4BF32169}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F59BA4DA-A72F-49CD-8F93-7E5A4BF32169}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F59BA4DA-A72F-49CD-8F93-7E5A4BF32169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CDAF83C-F3B0-4092-9873-8A8F70276567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CDAF83C-F3B0-4092-9873-8A8F70276567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CDAF83C-F3B0-4092-9873-8A8F70276567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CDAF83C-F3B0-4092-9873-8A8F70276567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\trx-tools.Commands\trx-tools.Commands.csproj" />
+      <ProjectReference Include="..\trx-tools.Commands\trx-tools.Commands.csproj" />
       <ProjectReference Include="..\trx-tools.Core\trx-tools.Core.csproj" />
     </ItemGroup>
 
