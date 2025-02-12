@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
+using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Models.Results;
 using trx_tools.Core.Models.ResultSummary;
@@ -168,7 +169,7 @@ public class TestRunMergerServiceTests
             new TestEntry
             {
                 TestId = "1",
-                ExecutionId = "1",
+                ExecutionId = "3",
                 TestListId = null!
             }
         ],
@@ -216,25 +217,17 @@ public class TestRunMergerServiceTests
     }
 
     [Test]
-    public void MergeTestRuns_When_Called_With_Two_Failed_TestRuns_Returns_Merged_TestRun()
+    public void MergeTestRuns_When_Called_With_Duplicated_Test_Executions_Throws()
     {
         // Arrange
         var mockLogger = new Mock<ILogger<TestRunMergerService>>();
         var service = new TestRunMergerService(mockLogger.Object);
-
+        
         // Act
-        var result = service.MergeTestRuns([_failedTestRun, _failedTestRun]);
-
+        void Act() => service.MergeTestRuns([_failedTestRun, _failedTestRun]);
+        
         // Assert
-        result.Results.Should().HaveCount(4);
-        result.TestDefinitions.Should().HaveCount(4);
-        result.TestEntries.Should().HaveCount(4);
-        result.TestLists.Should().HaveCount(4);
-        result.ResultSummary.Counters.Total.Should().Be(4);
-        result.ResultSummary.Counters.Passed.Should().Be(2);
-        result.ResultSummary.Counters.Failed.Should().Be(2);
-        result.ResultSummary.Outcome.Should().Be("Failed");
-        result.ResultSummary.Output.StdOut.Should().Be("test" + Environment.NewLine + "test");
+        Assert.That(Act, Throws.TypeOf<DuplicatedTestExecutionFoundException>());
     }
     
     [Test]
@@ -256,28 +249,6 @@ public class TestRunMergerServiceTests
         result.ResultSummary.Counters.Passed.Should().Be(2);
         result.ResultSummary.Counters.Failed.Should().Be(1);
         result.ResultSummary.Outcome.Should().Be("Failed");
-        result.ResultSummary.Output.StdOut.Should().Be("test" + Environment.NewLine + "test");
-    }
-    
-    [Test]
-    public void MergeTestRuns_When_Called_With_Two_Passed_TestRuns_Returns_Merged_TestRun()
-    {
-        // Arrange
-        var mockLogger = new Mock<ILogger<TestRunMergerService>>();
-        var service = new TestRunMergerService(mockLogger.Object);
-
-        // Act
-        var result = service.MergeTestRuns([_passedTestRun, _passedTestRun]);
-
-        // Assert
-        result.Results.Should().HaveCount(2);
-        result.TestDefinitions.Should().HaveCount(2);
-        result.TestEntries.Should().HaveCount(2);
-        result.TestLists.Should().HaveCount(2);
-        result.ResultSummary.Counters.Total.Should().Be(2);
-        result.ResultSummary.Counters.Passed.Should().Be(2);
-        result.ResultSummary.Counters.Failed.Should().Be(0);
-        result.ResultSummary.Outcome.Should().Be("Passed");
         result.ResultSummary.Output.StdOut.Should().Be("test" + Environment.NewLine + "test");
     }
 }

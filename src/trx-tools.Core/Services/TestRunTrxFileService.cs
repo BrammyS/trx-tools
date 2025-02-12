@@ -31,4 +31,10 @@ public class TestRunTrxFileService(ILogger<TestRunTrxFileService> logger) : ITes
         logger.LogInformation("Finding TRX files in directory {DirectoryPath}", directoryPath);
         return Directory.GetFiles(directoryPath, "*.trx", SearchOption.AllDirectories);
     }
+
+    public Task WriteHtmlReportAsync(string path, string html)
+    {
+        logger.LogInformation("Writing HTML report to {Path}", path);
+        return File.WriteAllTextAsync(path, html);
+    }
 }

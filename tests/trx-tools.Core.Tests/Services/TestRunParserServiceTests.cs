@@ -279,7 +279,7 @@ public class TestRunParserServiceTests
         result.Id.Should().Be("1");
         result.RunUser.Should().Be("RunUser");
         result.Times.Should().NotBeNull();
-        result.Times.Creation.Should().Be(new DateTime(2000));
+        result.Times!.Creation.Should().Be(new DateTime(2000));
         result.Times.Queuing.Should().Be(new DateTime(2000));
         result.Times.Start.Should().Be(new DateTime(2000));
         result.Times.Finish.Should().Be(new DateTime(2000));

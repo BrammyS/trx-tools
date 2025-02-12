@@ -1,7 +1,7 @@
 ﻿namespace trx_tools.Core.Models.Parsed;
 
 public record ParsedTestRun(
-    Times Times,
+    Times? Times,
     List<ParsedUnitTestResult> Results,
     ResultSummary.ResultSummary ResultSummary,
     string Id,

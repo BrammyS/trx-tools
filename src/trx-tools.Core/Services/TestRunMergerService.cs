@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Models.Results;
 using trx_tools.Core.Models.ResultSummary;
@@ -22,6 +23,14 @@ public class TestRunMergerService(ILogger<TestRunMergerService> logger) : ITestR
         var mergedTestLists = new List<TestList>();
         foreach (var testRun in testRuns)
         {
+            foreach (var testEntry in testRun.TestEntries)
+            {
+                if (mergedTestEntries.Any(x => x.ExecutionId == testEntry.ExecutionId))
+                {
+                    throw new DuplicatedTestExecutionFoundException($"Duplicated test execution found with ID {testEntry.ExecutionId}");
+                }
+            }
+            
             mergedUnitTestResults.AddRange(testRun.Results);
             mergedUnitTests.AddRange(testRun.TestDefinitions);
             mergedTestEntries.AddRange(testRun.TestEntries);

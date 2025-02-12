@@ -6,4 +6,7 @@ public record ParsedUnitTestResult(
     string Class,
     string Name,
     TimeSpan Duration
-);
+)
+{
+    public string FullName => $"{Class}.{Name}";
+}
