@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Models.Results;
 using trx_tools.Core.Models.ResultSummary;
@@ -22,10 +23,39 @@ public class TestRunMergerService(ILogger<TestRunMergerService> logger) : ITestR
         var mergedTestLists = new List<TestList>();
         foreach (var testRun in testRuns)
         {
+            foreach (var testEntry in testRun.TestEntries)
+            {
+                if (mergedTestEntries.Any(x => x.ExecutionId == testEntry.ExecutionId))
+                {
+                    throw new DuplicatedTestExecutionFoundException($"Duplicated test execution found with ID {testEntry.ExecutionId}");
+                }
+            }
+            
             mergedUnitTestResults.AddRange(testRun.Results);
             mergedUnitTests.AddRange(testRun.TestDefinitions);
             mergedTestEntries.AddRange(testRun.TestEntries);
             mergedTestLists.AddRange(testRun.TestLists);
+        }
+        
+        var counters = new Counters();
+        foreach (var summary in testRuns.Select(testRun => testRun.ResultSummary.Counters))
+        {
+            counters.Total += summary.Total;
+            counters.Executed += summary.Executed;
+            counters.Passed += summary.Passed;
+            counters.Failed += summary.Failed;
+            counters.Error += summary.Error;
+            counters.Timeout += summary.Timeout;
+            counters.Aborted += summary.Aborted;
+            counters.Inconclusive += summary.Inconclusive;
+            counters.PassedButRunAborted += summary.PassedButRunAborted;
+            counters.NotRunnable += summary.NotRunnable;
+            counters.NotExecuted += summary.NotExecuted;
+            counters.Disconnected += summary.Disconnected;
+            counters.Warning += summary.Warning;
+            counters.Completed += summary.Completed;
+            counters.InProgress += summary.InProgress;
+            counters.Pending += summary.Pending;
         }
         
         return new TestRun
@@ -38,25 +68,7 @@ public class TestRunMergerService(ILogger<TestRunMergerService> logger) : ITestR
             TestLists = mergedTestLists.ToArray(),
             ResultSummary = new ResultSummary
             {
-                Counters = new Counters
-                {
-                    Total = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Total),
-                    Executed = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Executed),
-                    Passed = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Passed),
-                    Failed = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Failed),
-                    Error = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Error),
-                    Timeout = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Timeout),
-                    Aborted = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Aborted),
-                    Inconclusive = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Inconclusive),
-                    PassedButRunAborted = (uint)testRuns.Sum(x => x.ResultSummary.Counters.PassedButRunAborted),
-                    NotRunnable = (uint)testRuns.Sum(x => x.ResultSummary.Counters.NotRunnable),
-                    NotExecuted = (uint)testRuns.Sum(x => x.ResultSummary.Counters.NotExecuted),
-                    Disconnected = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Disconnected),
-                    Warning = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Warning),
-                    Completed = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Completed),
-                    InProgress = (uint)testRuns.Sum(x => x.ResultSummary.Counters.InProgress),
-                    Pending = (uint)testRuns.Sum(x => x.ResultSummary.Counters.Pending)
-                },
+                Counters = counters,
                 Output = new Output
                 {
                     StdOut = string.Join(Environment.NewLine, testRuns.Select(x => x.ResultSummary.Output.StdOut))

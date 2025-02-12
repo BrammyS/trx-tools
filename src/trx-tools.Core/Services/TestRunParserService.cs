@@ -48,14 +48,15 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
                 testResult.Outcome,
                 unitTest.TestMethod.ClassName,
                 unitTest.TestMethod.Name,
-                TimeSpan.Parse(testResult.Duration)
+                TimeSpan.Parse(testResult.Duration),
+                testResult.Output
             ));
         }
         
         logger.LogInformation("Parsed {Count} test results", parsedResults.Count);
         return new ParsedTestRun(
             testRun.Times,
-            parsedResults,
+            parsedResults.OrderBy(x => x.FullName).ToList(),
             testRun.ResultSummary,
             testRun.Id,
             testRun.Name,
