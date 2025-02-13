@@ -1,0 +1,32 @@
+﻿name: .NET Release
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+-beta"
+      - "v[0-9]+.[0-9]+.[0-9]+-beta.[0-9]*"
+      - "v[0-9]+.[0-9]+.[0-9]+"
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+      - build:
+          uses: ./.github/workflows/dotnet.yml
+          secrets: inherit
+
+      - name: Publish win-x64
+        needs: build
+        run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/win-x64 --self-contained true --runtime win-x64
+      
+      - name: Publish linux-x64
+        needs: build
+        run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/linux-x64 --self-contained true --runtime linux-x64
+
+      - name: Release files
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ./publish/linux-x64/trx-tools.Reporting
+            ./publish/win-x64/trx-tools.Reporting.exe
