@@ -9,4 +9,4 @@ updates:
     directory: "/" # Location of package manifests
     target-branch: "dev" # The branch that dependabot will target
     schedule:
-      interval: "daily"
+      interval: "weekly"
