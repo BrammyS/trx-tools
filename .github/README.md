@@ -19,26 +19,16 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/BrammyS/trx-tools">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">trx-tools</h3>
+<h1 align="center">trx-tools</h3>
 
   <p align="center">
     Reporting and merging tool for TRX files.
     <br />
-    <a href="https://github.com/BrammyS/trx-tools/todo"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="https://trx-tools.brammys.com">Demo Report</a>
     ·
-    <a href="https://github.com/BrammyS/trx-tools/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/BrammyS/trx-tools/issues">Request Feature</a>
+    <a href="https://github.com/BrammyS/trx-tools/wiki">Explore the docs</a>
   </p>
 </div>
 
@@ -74,7 +64,9 @@
 ## About The Project
 
 trx-tools is a project that aims to provide a set of tools to interact with TRX test files. For example, converting a TRX file to a HTML report, PDF report, Json file, etc. This also includes merging multiple TRX files into one.
+See an example report [here](https://trx-tools.brammys.com).
 
+The goals of this project is to provide a tool that can be used to generate test reports after using the `dotnet test` command. This command does not return a single report. Meaning, the trx files have to be merged manually after which they can be converted into a readable report.
 
 ### Built With
 
