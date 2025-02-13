@@ -42,15 +42,12 @@ jobs:
         run: dotnet test --no-build --configuration Release --logger GitHubActions
 
       - name: Publish win-x64
-        needs: build
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/win-x64 --self-contained true --runtime win-x64
       
       - name: Publish linux-x64
-        needs: build
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/linux-x64 --self-contained true --runtime linux-x64
 
       - name: Release files
-        needs: build
         uses: softprops/action-gh-release@v2
         with:
           files: |
