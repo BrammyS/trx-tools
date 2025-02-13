@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using trx_tools.Commands.Abstraction;
-using trx_tools.Commands.Abstraction.Interfaces;
+using trx_tools.Commands;
+using trx_tools.Commands.Interfaces;
 using trx_tools.Core;
 using trx_tools.HtmlReporting.Commands;
 using trx_tools.HtmlReporting.Services;

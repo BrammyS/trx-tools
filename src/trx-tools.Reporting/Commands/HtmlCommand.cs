@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using trx_tools.Commands.Abstraction;
+using trx_tools.Commands;
 using trx_tools.HtmlReporting.Services.Interfaces;
 
 namespace trx_tools.HtmlReporting.Commands;

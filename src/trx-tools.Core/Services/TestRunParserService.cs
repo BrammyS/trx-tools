@@ -22,10 +22,7 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
                 throw new UnitTestDataNotFoundException($"Could not find test definition for test entry with ID {testEntry.TestId}");
             }
 
-            if (logger.IsEnabled(LogLevel.Debug))
-            {
-                logger.LogDebug("unitTest found for test entry with ID {TestId}", testEntry.TestId);
-            }
+            logger.LogDebug("unitTest found for test entry with ID {TestId}", testEntry.TestId);
 
             var testResult = testRun.Results.FirstOrDefault(x => x.ExecutionId == testEntry.ExecutionId);
             if (testResult is null)
@@ -33,10 +30,7 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
                 throw new TestResultDataNotFoundException($"Could not find test result for test entry with execution ID {testEntry.ExecutionId}");
             }
 
-            if (logger.IsEnabled(LogLevel.Debug))
-            {
-                logger.LogDebug("testResult found for test entry with execution ID {ExecutionId}", testEntry.ExecutionId);
-            }
+            logger.LogDebug("testResult found for test entry with execution ID {ExecutionId}", testEntry.ExecutionId);
 
             if (testResult.TestId != testEntry.TestId)
             {

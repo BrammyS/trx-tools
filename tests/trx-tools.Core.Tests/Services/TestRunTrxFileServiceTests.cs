@@ -42,7 +42,7 @@ public class TestRunTrxFileServiceTests
         var mockLogger = new Mock<ILogger<TestRunTrxFileService>>();
         var service = new TestRunTrxFileService(mockLogger.Object);
         var trxFile = Path.Combine(AppContext.BaseDirectory, "TestFiles", "test_2025-02-11_17_41_50.trx");
-        
+
         var jsonFile = Path.Combine(AppContext.BaseDirectory, "TestFiles", "test_2025-02-11_17_41_50.json");
         var expectedJson = File.ReadAllText(jsonFile);
 
@@ -57,7 +57,7 @@ public class TestRunTrxFileServiceTests
         });
         json.Should().Be(expectedJson);
     }
-    
+
     [Test]
     public void ReadTestRun_Should_Throw_Exception_When_File_Does_Not_Exist()
     {
@@ -72,7 +72,30 @@ public class TestRunTrxFileServiceTests
         // Assert
         act.Should().Throw<TrxFileDoesNotExistException>();
     }
-    
+
+    [Test]
+    public void ReadTestRun_Should_Throw_Exception_When_File_Is_Invalid()
+    {
+        var incorrectFile = Path.Combine(AppContext.BaseDirectory, "TestFiles", "invalid_file.trx");
+        try
+        {
+            // Arrange
+            File.WriteAllText(incorrectFile, "invalid content");
+            var mockLogger = new Mock<ILogger<TestRunTrxFileService>>();
+            var service = new TestRunTrxFileService(mockLogger.Object);
+
+            // Act
+            Action act = () => service.ReadTestRun(incorrectFile);
+
+            // Assert
+            act.Should().Throw<InvalidOperationException>();
+        }
+        finally
+        {
+            File.Delete(incorrectFile);
+        }
+    }
+
     [Test]
     public void FindTrxFilesInDirectory_Should_Return_List_Of_Trx_Files()
     {
@@ -87,5 +110,22 @@ public class TestRunTrxFileServiceTests
         // Assert
         result.Should().NotBeEmpty();
         result.Should().HaveCount(5);
+    }
+    
+    [Test]
+    public void WriteHtmlReportAsync_Should_Write_Html_Report()
+    {
+        // Arrange
+        var mockLogger = new Mock<ILogger<TestRunTrxFileService>>();
+        var service = new TestRunTrxFileService(mockLogger.Object);
+        const string html = "<html><body><h1>Test</h1></body></html>";
+        var path = Path.Combine(AppContext.BaseDirectory, "TestFiles", "test.html");
+
+        // Act
+        service.WriteHtmlReportAsync(path, html).Wait();
+
+        // Assert
+        File.Exists(path).Should().BeTrue();
+        File.ReadAllText(path).Should().Be(html);
     }
 }

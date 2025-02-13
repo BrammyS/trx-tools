@@ -1,7 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
-using trx_tools.Commands.Abstraction.Interfaces;
+﻿using System.Text;
+using Microsoft.Extensions.Logging;
+using trx_tools.Commands.Interfaces;
 
-namespace trx_tools.Commands.Abstraction;
+namespace trx_tools.Commands;
 
 public class CommandHandler(ILogger<CommandHandler> logger, IEnumerable<ICommand> commands) : ICommandHandler
 {
@@ -32,10 +33,13 @@ public class CommandHandler(ILogger<CommandHandler> logger, IEnumerable<ICommand
 
     private void PrintHelp()
     {
-        Console.WriteLine("Available commands:");
+        var sb = new StringBuilder();
+        sb.AppendLine("Available commands:");
         foreach (var command in commands)
         {
-            Console.WriteLine($"{command.Name} - {command.Description}");
+            sb.AppendLine($"{command.Name} - {command.Description}");
         }
+        
+        logger.LogInformation("Help: {Help}", sb.ToString());
     }
 }

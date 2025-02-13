@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using trx_tools.Core;
 using trx_tools.Core.Models.Parsed;
 using trx_tools.HtmlReporting.Extensions;
 
@@ -55,7 +56,7 @@ public class HtmlReportBuilder
     {
         var sb = new StringBuilder();
         sb.AppendLine("<html><head><style>");
-        sb.AppendLine(".list-row,.row{width:100%;cursor:pointer}body{font-family:Calibri,Verdana,Arial,sans-serif;background-color:#fff;color:#000}h2{margin-top:15px;margin-bottom:10px}pre{white-space:pre-wrap}.summary{font-family:monospace;display:-webkit-flex;-webkit-flex-wrap:wrap;display:flex;flex-wrap:wrap}.row{border:2px solid #fff;background-color:#d7e9fa}.inner-row,.list-row{background-color:#fff;border:2px solid #fff}.inner-row{padding-left:1%;margin-left:1%}.block{width:150px}.leaf-division{border:2px solid #fff;background-color:#e6eff7}.pass{color:#0c0}.fail{color:#c00}.error-message,.error-stack-trace{color:brown}.duration{float:right;padding-right:1%}.pass-percentage,.test-run-time,.total-tests{font-size:30px}.error-info{margin-left:16px}");
+        sb.AppendLine(".list-row,.row{width:100%;cursor:pointer}body{font-family:Calibri,Verdana,Arial,sans-serif;background-color:#fff;color:#000}h2{margin-top:15px;margin-bottom:10px}pre{white-space:pre-wrap}.summary{font-family:monospace;display:-webkit-flex;-webkit-flex-wrap:wrap;display:flex;flex-wrap:wrap}.row{border:2px solid #fff;background-color:#d7e9fa}.inner-row,.list-row{background-color:#fff;border:2px solid #fff}.inner-row{padding-left:1%;margin-left:1%}.block{width:150px}.leaf-division{border:2px solid #fff;background-color:#e6eff7}.skip{color:#ffa500}.pass{color:#0c0}.fail{color:#c00}.error-message,.error-stack-trace{color:brown}.duration{float:right;padding-right:1%}.pass-percentage,.test-run-time,.total-tests{font-size:30px}.error-info{margin-left:16px}");
         sb.AppendLine("</style></head><body>");
         sb.AppendLine("<h1>Test run details</h1>");
         sb.AppendLine("<div class='summary'>");
@@ -70,19 +71,20 @@ public class HtmlReportBuilder
         if (_failedTests > 0)
         {
             sb.AppendLine("<h2>Failed Results</h2>");
-            AddTestResults(sb, _testResults.Where(x => !x.IsSuccess).ToList(), true);
+            AddTestResults(sb, _testResults.Where(x => x.IsFailed).ToList(), true);
         }
 
         sb.AppendLine("<h2>All Results</h2>");
         AddTestResults(sb, _testResults, false);
-        
+
         sb.AppendLine("<div><h2>Informational messages</h2>");
         foreach (var msg in _messages)
         {
             sb.AppendLine($"<span>{msg.ReplaceLineEndings("<br>")}</span><br>");
         }
+
         sb.AppendLine("</div></body></html>");
-        
+
         return sb.ToString();
     }
 
@@ -90,31 +92,49 @@ public class HtmlReportBuilder
     {
         foreach (var codebaseGroup in testRuns.GroupBy(x => x.Codebase))
         {
-            sb.AppendLine($"<details{(open ? " open=''" : "")}>");
+            sb.AppendLine($"<details{GetOpenDetailTagWhenRequired(open)}>");
             sb.AppendLine($"<summary>{Path.GetFileNameWithoutExtension(codebaseGroup.Key)}</summary>");
             sb.AppendLine("<div class='inner-row'>");
             foreach (var testResult in codebaseGroup)
             {
                 sb.AppendLine("<div class='leaf-division'>");
-                sb.AppendLine($"<div><span class='{(testResult.IsSuccess ? "pass" : "fail")}'>{(testResult.IsSuccess ? "✔" : "✖")}</span>");
+                sb.AppendLine($"<div><span class='{GetTestResultCssClass(testResult)}'>{GetTestResultIcon(testResult)}</span>");
                 sb.AppendLine($"<span>{testResult.Name}</span>");
                 sb.AppendLine($"<div class='duration'><span>{testResult.Duration.ToHumanReadableTimeSpan()}</span></div>");
-            
-                if (!testResult.IsSuccess)
+
+                if (testResult.IsFailed)
                 {
                     sb.AppendLine("<div class='error-info'>");
                     sb.AppendLine($"Error: <span class='error-message'><pre>{testResult.Output.ErrorInfo.Message}</pre></span><br>");
                     sb.AppendLine($"Stack trace: <span class='error-message'><pre>{testResult.Output.ErrorInfo.StackTrace}</pre></span><br>");
                     sb.AppendLine("</div>");
                 }
+
                 sb.AppendLine("</div></div>");
             }
-            
+
             sb.AppendLine("</div>");
             sb.AppendLine("</details>");
         }
     }
-    
+
+    private static string GetOpenDetailTagWhenRequired(bool open)
+    {
+        return open ? " open=''" : "";
+    }
+
+    private static string GetTestResultIcon(ParsedUnitTestResult testResult)
+    {
+        if (testResult.IsSuccess) return "✔";
+        return testResult.Outcome == Constants.NotExecutedTestRunOutcome ? "❢" : "✘";
+    }
+
+    private static string GetTestResultCssClass(ParsedUnitTestResult testResult)
+    {
+        if (testResult.IsSuccess) return "pass";
+        return testResult.Outcome == Constants.NotExecutedTestRunOutcome ? "skip" : "fail";
+    }
+
     private double CalculatePassPercentage()
     {
         if (_totalTests == 0) return 0;

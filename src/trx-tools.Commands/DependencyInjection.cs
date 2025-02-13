@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using trx_tools.Commands.Abstraction.Interfaces;
+using trx_tools.Commands.Interfaces;
 
-namespace trx_tools.Commands.Abstraction;
+namespace trx_tools.Commands;
 
 public static class DependencyInjection
 {

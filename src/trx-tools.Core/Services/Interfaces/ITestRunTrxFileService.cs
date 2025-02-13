@@ -6,5 +6,5 @@ public interface ITestRunTrxFileService
 {
     TestRun ReadTestRun(string filePath);
     string[] FindTrxFilesInDirectory(string directoryPath);
-    Task WriteHtmlReportAsync(string combine, string build);
+    Task WriteHtmlReportAsync(string path, string html);
 }
