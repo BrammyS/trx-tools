@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using trx_tools.Core.Extensions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Services.Interfaces;
 using trx_tools.HtmlReporting.Builders;
@@ -27,7 +28,7 @@ public class HtmlReportingService(
         var htmlReport = new HtmlReportBuilder()
             .WithPassedTests(parsedTestRun.ResultSummary.Counters.Passed)
             .WithFailedTests(parsedTestRun.ResultSummary.Counters.Failed)
-            .WithSkippedTests(parsedTestRun.ResultSummary.Counters.NotExecuted)
+            .WithSkippedTests(parsedTestRun.ResultSummary.Counters.GetSkippedTestCount())
             .WithTotalTests(parsedTestRun.ResultSummary.Counters.Total)
             .WithMessage(parsedTestRun.ResultSummary.Output.StdOut);
 

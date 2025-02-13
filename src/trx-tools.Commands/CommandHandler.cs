@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using trx_tools.Commands.Abstraction.Interfaces;
+using trx_tools.Commands.Interfaces;
 
-namespace trx_tools.Commands.Abstraction;
+namespace trx_tools.Commands;
 
 public class CommandHandler(ILogger<CommandHandler> logger, IEnumerable<ICommand> commands) : ICommandHandler
 {

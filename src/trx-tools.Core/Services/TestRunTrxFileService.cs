@@ -17,13 +17,7 @@ public class TestRunTrxFileService(ILogger<TestRunTrxFileService> logger) : ITes
 
         var serializer = new XmlSerializer(typeof(TestRun), "http://microsoft.com/schemas/VisualStudio/TeamTest/2010");
         using var fs = File.OpenRead(filePath);
-        var deserializedTestRun = serializer.Deserialize(fs);
-        if (deserializedTestRun is null)
-        {
-            throw new NullReferenceException("Deserialized test run is null");
-        }
-
-        return (TestRun)deserializedTestRun;
+        return (TestRun)serializer.Deserialize(fs)!;
     }
 
     public string[] FindTrxFilesInDirectory(string directoryPath)

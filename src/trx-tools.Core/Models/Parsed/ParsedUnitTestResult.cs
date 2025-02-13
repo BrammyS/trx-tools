@@ -10,4 +10,7 @@ public record ParsedUnitTestResult(
     string Codebase,
     TimeSpan Duration,
     UnitTestResultOutput Output
-);
+)
+{
+    public bool IsFailed => !IsSuccess && Outcome != Constants.NotExecutedTestRunOutcome;
+};

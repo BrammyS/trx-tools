@@ -1,4 +1,4 @@
-﻿namespace trx_tools.Commands.Abstraction;
+﻿namespace trx_tools.Commands;
 
 public interface ICommand
 {
