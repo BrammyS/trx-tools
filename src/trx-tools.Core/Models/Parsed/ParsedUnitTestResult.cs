@@ -10,7 +10,4 @@ public record ParsedUnitTestResult(
     string Codebase,
     TimeSpan Duration,
     UnitTestResultOutput Output
-)
-{
-    public string FullName => $"{Class}.{Name}";
-}
+);

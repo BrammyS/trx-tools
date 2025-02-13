@@ -97,7 +97,7 @@ public class HtmlReportBuilder
             {
                 sb.AppendLine("<div class='leaf-division'>");
                 sb.AppendLine($"<div><span class='{(testResult.IsSuccess ? "pass" : "fail")}'>{(testResult.IsSuccess ? "✔" : "✖")}</span>");
-                sb.AppendLine($"<span>{testResult.FullName}</span>");
+                sb.AppendLine($"<span>{testResult.Name}</span>");
                 sb.AppendLine($"<div class='duration'><span>{testResult.Duration.ToHumanReadableTimeSpan()}</span></div>");
             
                 if (!testResult.IsSuccess)
