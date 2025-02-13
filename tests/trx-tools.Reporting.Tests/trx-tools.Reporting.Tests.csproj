@@ -23,4 +23,10 @@
       <ProjectReference Include="..\..\src\trx-tools.Reporting\trx-tools.Reporting.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="TestFiles\TestReport1.html">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

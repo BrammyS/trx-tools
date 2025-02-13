@@ -71,7 +71,7 @@ public class HtmlReportBuilder
         if (_failedTests > 0)
         {
             sb.AppendLine("<h2>Failed Results</h2>");
-            AddTestResults(sb, _testResults.Where(x => !x.IsSuccess).ToList(), true);
+            AddTestResults(sb, _testResults.Where(x => x.IsFailed).ToList(), true);
         }
 
         sb.AppendLine("<h2>All Results</h2>");
