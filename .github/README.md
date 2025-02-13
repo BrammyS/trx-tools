@@ -78,25 +78,33 @@ The goals of this project is to provide a tool that can be used to generate test
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Todo:
-
-
+To get a local copy up and running follow these simple steps.
+1. Go to the latest [release](https://github.com/BrammyS/trx-tools/releases).
+2. Download the correct runtime for your system from the assets of the release.
+3. And you are ready to go! 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Todo:
+The report tool has a help command that can be used to see all the available commands and options. 
+```sh
+trx-tools.Reporting help
+```
 
+To generate a report from a TRX file, use the following command:
+```sh
+trx-tools.Reporting html "path/to/trxFolder" "path/to/output/file.html"
+```
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Merging multiple TRX files
+- [x] Generating a HTML report
+- [x] Automatic release pipeline from tags
+- [ ] Generating a PDF report
 
 See the [open issues](https://github.com/BrammyS/trx-tools/issues) for a full list of proposed features (and known issues).
 

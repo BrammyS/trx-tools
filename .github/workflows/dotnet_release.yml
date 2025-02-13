@@ -1,4 +1,8 @@
 ﻿name: .NET Release
+
+permissions:
+  contents: write
+ 
 on:
   push:
     tags:
@@ -12,16 +16,39 @@ jobs:
       matrix:
         os: [ubuntu-latest]
     steps:
-      - build:
-          uses: ./.github/workflows/dotnet.yml
-          secrets: inherit
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - run: echo ${{matrix.os}}
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Load nuget cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.nuget/packages
+            !~/.nuget/packages/unwanted
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Test
+        run: dotnet test --no-build --configuration Release --logger GitHubActions
 
       - name: Publish win-x64
-        needs: build
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/win-x64 --self-contained true --runtime win-x64
       
       - name: Publish linux-x64
-        needs: build
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/linux-x64 --self-contained true --runtime linux-x64
 
       - name: Release files
