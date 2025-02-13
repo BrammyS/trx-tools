@@ -67,14 +67,14 @@ public class HtmlReportBuilder
         sb.AppendLine($"<div class='block'><span>Run duration</span><div class='test-run-time'>{_runDuration.ToHumanReadableTimeSpan()}</div></div>");
         sb.AppendLine("</div>");
 
-        if (_failedTests > 1)
+        if (_failedTests > 0)
         {
             sb.AppendLine("<h2>Failed Results</h2>");
-            AddTestResults(sb, _testResults.Where(x => !x.IsSuccess).ToList());
+            AddTestResults(sb, _testResults.Where(x => !x.IsSuccess).ToList(), true);
         }
 
         sb.AppendLine("<h2>All Results</h2>");
-        AddTestResults(sb, _testResults);
+        AddTestResults(sb, _testResults, false);
         
         sb.AppendLine("<div><h2>Informational messages</h2>");
         foreach (var msg in _messages)
@@ -86,11 +86,11 @@ public class HtmlReportBuilder
         return sb.ToString();
     }
 
-    private static void AddTestResults(StringBuilder sb, List<ParsedUnitTestResult> testRuns)
+    private static void AddTestResults(StringBuilder sb, List<ParsedUnitTestResult> testRuns, bool open)
     {
         foreach (var codebaseGroup in testRuns.GroupBy(x => x.Codebase))
         {
-            sb.AppendLine($"<details{(codebaseGroup.Any(x => !x.IsSuccess) ? " open=''" : "")}>");
+            sb.AppendLine($"<details{(open ? " open=''" : "")}>");
             sb.AppendLine($"<summary>{Path.GetFileNameWithoutExtension(codebaseGroup.Key)}</summary>");
             sb.AppendLine("<div class='inner-row'>");
             foreach (var testResult in codebaseGroup)
