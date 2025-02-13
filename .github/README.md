@@ -41,6 +41,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#example">Example</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -67,6 +68,10 @@ trx-tools is a project that aims to provide a set of tools to interact with TRX 
 See an example report [here](https://trx-tools.brammys.com).
 
 The goals of this project is to provide a tool that can be used to generate test reports after using the `dotnet test` command. This command does not return a single report. Meaning, the trx files have to be merged manually after which they can be converted into a readable report.
+
+### Example
+![image](https://github.com/user-attachments/assets/b0a2246b-4071-4657-bdd3-a6d265b3bc5b)
+
 
 ### Built With
 
