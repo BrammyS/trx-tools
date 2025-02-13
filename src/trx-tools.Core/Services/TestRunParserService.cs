@@ -48,6 +48,7 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
                 testResult.Outcome,
                 unitTest.TestMethod.ClassName,
                 unitTest.TestMethod.Name,
+                unitTest.TestMethod.CodeBase,
                 TimeSpan.Parse(testResult.Duration),
                 testResult.Output
             ));

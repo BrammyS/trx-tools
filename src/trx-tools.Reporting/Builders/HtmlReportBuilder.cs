@@ -60,28 +60,26 @@ public class HtmlReportBuilder
         sb.AppendLine("<h1>Test run details</h1>");
         sb.AppendLine("<div class='summary'>");
         sb.AppendLine($"<div class='block'><span>Total tests</span><div class='total-tests'>{_totalTests}</div></div>");
-        sb.AppendLine($"<div class='block'><span>Passed :</span><span class='passedTests'>{_passedTests}</span>");
-        sb.AppendLine($"<br><span>Failed :</span><span class='failedTests'>{_failedTests}</span>");
-        sb.AppendLine($"<br><span>Skipped :</span><span class='skippedTests'>{_skippedTests}</span></div>");
-        sb.AppendLine($"<div class='block'><span>Pass percentage</span><div class='pass-percentage'>{CalculatePassPercentage():F2} %</div><br></div>");
+        sb.AppendLine($"<div class='block'><span>Passed&nbsp;&nbsp;:&nbsp;</span><span class='passedTests'>{_passedTests}</span>");
+        sb.AppendLine($"<br><span>Failed&nbsp;&nbsp;:&nbsp;</span><span class='failedTests'>{_failedTests}</span>");
+        sb.AppendLine($"<br><span>Skipped :&nbsp;</span><span class='skippedTests'>{_skippedTests}</span></div>");
+        sb.AppendLine($"<div class='block'><span>Pass percentage</span><div class='pass-percentage'>{CalculatePassPercentage():F0} %</div><br></div>");
         sb.AppendLine($"<div class='block'><span>Run duration</span><div class='test-run-time'>{_runDuration.ToHumanReadableTimeSpan()}</div></div>");
         sb.AppendLine("</div>");
 
         if (_failedTests > 1)
         {
-            sb.AppendLine("<h2>Failed Results</h2><details open=''>");
+            sb.AppendLine("<h2>Failed Results</h2>");
             AddTestResults(sb, _testResults.Where(x => !x.IsSuccess).ToList());
-            sb.AppendLine("</details>");
         }
 
-        sb.AppendLine("<h2>All Results</h2><details>");
+        sb.AppendLine("<h2>All Results</h2>");
         AddTestResults(sb, _testResults);
-        sb.AppendLine("</details>");
         
         sb.AppendLine("<div><h2>Informational messages</h2>");
         foreach (var msg in _messages)
         {
-            sb.AppendLine($"<span>{msg}</span><br>");
+            sb.AppendLine($"<span>{msg.ReplaceLineEndings("<br>")}</span><br>");
         }
         sb.AppendLine("</div></body></html>");
         
@@ -90,27 +88,31 @@ public class HtmlReportBuilder
 
     private static void AddTestResults(StringBuilder sb, List<ParsedUnitTestResult> testRuns)
     {
-        sb.AppendLine("<summary>Test Results</summary>");
-        sb.AppendLine("<div class='inner-row'>");
-
-        foreach (var result in testRuns)
+        foreach (var codebaseGroup in testRuns.GroupBy(x => x.Codebase))
         {
-            sb.AppendLine("<div class='leaf-division'>");
-            sb.AppendLine($"<div><span class='{(result.IsSuccess ? "pass" : "fail")}'>{(result.IsSuccess ? "✔" : "✖")}</span>");
-            sb.AppendLine($"<span>{result.FullName}</span>");
-            sb.AppendLine($"<div class='duration'><span>{result.Duration.ToHumanReadableTimeSpan()}</span></div>");
-            
-            if (!result.IsSuccess)
+            sb.AppendLine($"<details{(codebaseGroup.Any(x => !x.IsSuccess) ? " open=''" : "")}>");
+            sb.AppendLine($"<summary>{Path.GetFileNameWithoutExtension(codebaseGroup.Key)}</summary>");
+            sb.AppendLine("<div class='inner-row'>");
+            foreach (var testResult in codebaseGroup)
             {
-                sb.AppendLine("<div class='error-info'>");
-                sb.AppendLine($"Error: <span class='error-message'><pre>{result.Output.ErrorInfo.Message}</pre></span><br>");
-                sb.AppendLine($"Stack trace: <span class='error-message'><pre>{result.Output.ErrorInfo.StackTrace}</pre></span><br>");
-                sb.AppendLine("</div>");
+                sb.AppendLine("<div class='leaf-division'>");
+                sb.AppendLine($"<div><span class='{(testResult.IsSuccess ? "pass" : "fail")}'>{(testResult.IsSuccess ? "✔" : "✖")}</span>");
+                sb.AppendLine($"<span>{testResult.FullName}</span>");
+                sb.AppendLine($"<div class='duration'><span>{testResult.Duration.ToHumanReadableTimeSpan()}</span></div>");
+            
+                if (!testResult.IsSuccess)
+                {
+                    sb.AppendLine("<div class='error-info'>");
+                    sb.AppendLine($"Error: <span class='error-message'><pre>{testResult.Output.ErrorInfo.Message}</pre></span><br>");
+                    sb.AppendLine($"Stack trace: <span class='error-message'><pre>{testResult.Output.ErrorInfo.StackTrace}</pre></span><br>");
+                    sb.AppendLine("</div>");
+                }
+                sb.AppendLine("</div></div>");
             }
-            sb.AppendLine("</div></div>");
+            
+            sb.AppendLine("</div>");
+            sb.AppendLine("</details>");
         }
-        
-        sb.AppendLine("</div>");
     }
     
     private double CalculatePassPercentage()
