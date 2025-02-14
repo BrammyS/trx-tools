@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Models.Parsed;
@@ -14,9 +14,11 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
         
         logger.LogInformation("Parsing test run");
         var parsedResults = new List<ParsedUnitTestResult>();
+
         foreach (var testEntry in testRun.TestEntries)
         {
-            var unitTest = testRun.TestDefinitions.FirstOrDefault(x => x.Id == testEntry.TestId);
+            var unitTest = testRun.TestDefinitions.FirstOrDefault(x => x.Execution.Id == testEntry.ExecutionId);
+            unitTest ??= testRun.TestDefinitions.FirstOrDefault(x => x.Id == testEntry.TestId);
             if (unitTest is null)
             {
                 throw new UnitTestDataNotFoundException($"Could not find test definition for test entry with ID {testEntry.TestId}");
