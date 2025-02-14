@@ -10,7 +10,7 @@ public class ResultSummary
 {
     public required Counters Counters { get; set; }
 
-    public required Output Output { get; set; }
+    public required Output? Output { get; set; }
 
     [XmlAttribute("outcome")] public required string Outcome { get; set; }
 

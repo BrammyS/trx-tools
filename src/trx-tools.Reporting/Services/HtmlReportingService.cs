@@ -29,8 +29,12 @@ public class HtmlReportingService(
             .WithPassedTests(parsedTestRun.ResultSummary.Counters.Passed)
             .WithFailedTests(parsedTestRun.ResultSummary.Counters.Failed)
             .WithSkippedTests(parsedTestRun.ResultSummary.Counters.GetSkippedTestCount())
-            .WithTotalTests(parsedTestRun.ResultSummary.Counters.Total)
-            .WithMessage(parsedTestRun.ResultSummary.Output.StdOut);
+            .WithTotalTests(parsedTestRun.ResultSummary.Counters.Total);
+        
+        if (parsedTestRun.ResultSummary.Output is not null)
+        {
+            htmlReport.WithMessage(parsedTestRun.ResultSummary.Output.StdOut);
+        }
 
         foreach (var unitTestResult in parsedTestRun.Results)
         {

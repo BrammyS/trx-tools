@@ -302,7 +302,7 @@ public class TestRunParserServiceTests
         result.ResultSummary.Counters.Warning.Should().Be(15);
         result.ResultSummary.Counters.Executed.Should().Be(16);
         result.ResultSummary.Output.Should().NotBeNull();
-        result.ResultSummary.Output.StdOut.Should().Be("Output message");
+        result.ResultSummary.Output!.StdOut.Should().Be("Output message");
         
         result.Results.Should().HaveCount(1);
         var firstResult = result.Results[0];
