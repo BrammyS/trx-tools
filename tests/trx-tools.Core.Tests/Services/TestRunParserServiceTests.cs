@@ -95,7 +95,10 @@ public class TestRunParserServiceTests
                         CodeBase = null!,
                         AdapterTypeName = null!
                     },
-                    Execution = null!,
+                    Execution = new Execution
+                    {
+                        Id = "ExecutionId"
+                    },
                     Storage = null!
                 }
             ],
@@ -146,7 +149,10 @@ public class TestRunParserServiceTests
                         CodeBase = null!,
                         AdapterTypeName = null!
                     },
-                    Execution = null!,
+                    Execution = new Execution
+                    {
+                        Id = "ExecutionId"
+                    },
                     Storage = null!
                 }
             ],
@@ -212,7 +218,10 @@ public class TestRunParserServiceTests
                         CodeBase = "test",
                         AdapterTypeName = "test"
                     },
-                    Execution = null!,
+                    Execution = new Execution
+                    {
+                        Id = "ExecutionId"
+                    },
                     Storage = null!
                 }
             ],
