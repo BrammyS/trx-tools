@@ -249,6 +249,6 @@ public class TestRunMergerServiceTests
         result.ResultSummary.Counters.Passed.Should().Be(2);
         result.ResultSummary.Counters.Failed.Should().Be(1);
         result.ResultSummary.Outcome.Should().Be("Failed");
-        result.ResultSummary.Output.StdOut.Should().Be("test" + Environment.NewLine + "test");
+        result.ResultSummary.Output!.StdOut.Should().Be("test" + Environment.NewLine + "test");
     }
 }

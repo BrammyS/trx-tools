@@ -21,7 +21,7 @@ public class TestRunMergerService(ILogger<TestRunMergerService> logger) : ITestR
         var mergedTestEntries = new List<TestEntry>();
         var mergedUnitTests = new List<UnitTest>();
         var mergedTestLists = new List<TestList>();
-        foreach (var testRun in testRuns)
+        foreach (var testRun in testRuns.Where(x => x.ResultSummary.Counters.Total > 0))
         {
             foreach (var testEntry in testRun.TestEntries)
             {
@@ -71,7 +71,7 @@ public class TestRunMergerService(ILogger<TestRunMergerService> logger) : ITestR
                 Counters = counters,
                 Output = new Output
                 {
-                    StdOut = string.Join(Environment.NewLine, testRuns.Select(x => x.ResultSummary.Output.StdOut))
+                    StdOut = string.Join(Environment.NewLine, testRuns.Where(x => x.ResultSummary.Output is not null).Select(x => x.ResultSummary.Output!.StdOut))
                 },
                 Outcome = testRuns.All(x => x.ResultSummary.Outcome == "Passed") ? "Passed" : "Failed",
                 RunInfos = []
