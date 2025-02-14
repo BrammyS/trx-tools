@@ -56,7 +56,7 @@ public class HtmlReportBuilder
     {
         var sb = new StringBuilder();
         sb.AppendLine("<html><head><style>");
-        sb.AppendLine(".list-row,.row{width:100%;cursor:pointer}body{font-family:Calibri,Verdana,Arial,sans-serif;background-color:#fff;color:#000}h2{margin-top:15px;margin-bottom:10px}pre{white-space:pre-wrap}.summary{font-family:monospace;display:-webkit-flex;-webkit-flex-wrap:wrap;display:flex;flex-wrap:wrap}.row{border:2px solid #fff;background-color:#d7e9fa}.inner-row,.list-row{background-color:#fff;border:2px solid #fff}.inner-row{padding-left:1%;margin-left:1%}.block{width:150px}.leaf-division{border:2px solid #fff;background-color:#e6eff7}.skip{color:#ffa500}.pass{color:#0c0}.fail{color:#c00}.error-message,.error-stack-trace{color:brown}.duration{float:right;padding-right:1%}.pass-percentage,.test-run-time,.total-tests{font-size:30px}.error-info{margin-left:16px}");
+        sb.AppendLine(".list-row,.row{width:100%;cursor:pointer}body{font-family:Calibri,Verdana,Arial,sans-serif;background-color:#fff;color:#000}h2{margin-top:15px;margin-bottom:10px}pre{white-space:pre-wrap}.testResult{word-wrap:break-word}.summary{font-family:monospace;display:-webkit-flex;-webkit-flex-wrap:wrap;display:flex;flex-wrap:wrap}.row{border:2px solid #fff;background-color:#d7e9fa}.inner-row,.list-row{background-color:#fff;border:2px solid #fff}.inner-row{padding-left:1%;margin-left:1%}.block{width:150px}.leaf-division{border:2px solid #fff;background-color:#e6eff7}.skip{color:#ffa500}.pass{color:#0c0}.fail{color:#c00}.error-message,.error-stack-trace{color:brown}.duration{float:right;padding-right:1%}.pass-percentage,.test-run-time,.total-tests{font-size:30px}.error-info{margin-left:16px}");
         sb.AppendLine("</style></head><body>");
         sb.AppendLine("<h1>Test run details</h1>");
         sb.AppendLine("<div class='summary'>");
@@ -93,13 +93,13 @@ public class HtmlReportBuilder
         foreach (var codebaseGroup in testRuns.GroupBy(x => x.Codebase))
         {
             sb.AppendLine($"<details{GetOpenDetailTagWhenRequired(open)}>");
-            sb.AppendLine($"<summary>{Path.GetFileNameWithoutExtension(codebaseGroup.Key)}</summary>");
+            sb.AppendLine($"<summary>{codebaseGroup.Key}</summary>");
             sb.AppendLine("<div class='inner-row'>");
             foreach (var testResult in codebaseGroup)
             {
                 sb.AppendLine("<div class='leaf-division'>");
-                sb.AppendLine($"<div><span class='{GetTestResultCssClass(testResult)}'>{GetTestResultIcon(testResult)}</span>");
-                sb.AppendLine($"<span>{testResult.Name}</span>");
+                sb.AppendLine($"<div class='testResult'><span class='{GetTestResultCssClass(testResult)}'>{GetTestResultIcon(testResult)}</span>");
+                sb.AppendLine($"<span>{testResult.Class}_{testResult.Name}</span>");
                 sb.AppendLine($"<div class='duration'><span>{testResult.Duration.ToHumanReadableTimeSpan()}</span></div>");
 
                 if (testResult.IsFailed)
