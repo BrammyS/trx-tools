@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using trx_tools.Core.Exceptions;
 using trx_tools.Core.Models;
 using trx_tools.Core.Models.Parsed;
@@ -53,7 +53,7 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
         logger.LogInformation("Parsed {Count} test results", parsedResults.Count);
         return new ParsedTestRun(
             testRun.Times,
-            parsedResults.OrderBy(x => x.Name).ToList(),
+            parsedResults.OrderBy(x => x.Codebase).ThenBy(x => x.Name).ToList(),
             testRun.ResultSummary,
             testRun.Id,
             testRun.Name,
