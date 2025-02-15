@@ -92,6 +92,26 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+### Github Actions
+The report tool can be used in a Github action to generate a report after running dotnet tests with the 'trx' logger.
+```yml
+- name: Run tests
+  run: dotnet test --logger "trx" --results-directory ./TestResults
+
+- name: Generate report
+  uses: BrammyS/trx-tools@v1.1.2
+  with:
+    report-type: html
+    trx-directory: ./TestResults
+    report-file: ./report.html
+
+- name: Upload Test Report
+  uses: actions/upload-artifact@v4
+  with:
+    name: test-report
+    path: ./report.html
+```
+### CLI
 The report tool has a help command that can be used to see all the available commands and options. 
 ```sh
 trx-tools.Reporting help
