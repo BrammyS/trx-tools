@@ -23,11 +23,6 @@ RUN dotnet publish "trx-tools.Reporting.csproj" \
 # Setup final runtime image
 FROM mcr.microsoft.com/dotnet/runtime-deps:9.0-alpine AS final
 
-# Create a user to run the application
-RUN adduser --disabled-password \
-  --home /app \
-  --gecos '' dotnetuser && chown -R dotnetuser /app
-
 # upgrade musl to remove potential vulnerability
 RUN apk upgrade musl
 
