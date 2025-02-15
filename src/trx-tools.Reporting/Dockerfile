@@ -35,4 +35,4 @@ USER dotnetuser
 WORKDIR /app
 COPY --from=base /app/publish .
 
-ENTRYPOINT ["./trx-tools.Reporting"]
+ENTRYPOINT ["/app/trx-tools.Reporting"]
