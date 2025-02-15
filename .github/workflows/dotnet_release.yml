@@ -1,4 +1,4 @@
-﻿name: .NET Release
+name: .NET Release
   
 permissions:
   contents: read
@@ -19,16 +19,11 @@ env:
   REPORTING_IMAGE_NAME: ${{ env.BASE_IMAGE_NAME }}.reporting
 
 jobs:
-  build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ ubuntu-latest ]
+  test:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - run: echo ${{matrix.os}}
 
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
@@ -54,6 +49,18 @@ jobs:
       - name: Test
         run: dotnet test --no-build --configuration Release --logger GitHubActions
 
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
       - name: Publish win-x64
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/win-x64 --self-contained true --runtime win-x64
 
@@ -67,6 +74,13 @@ jobs:
             ./publish/linux-x64/trx-tools.Reporting
             ./publish/win-x64/trx-tools.Reporting.exe
 
+  docker-release:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
       - name: Docker login
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
@@ -93,6 +107,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
         with:
-          subject-name: ${{ env.REGISTRY }}/${{ env.REPORTING_IMAGE_NAME}}
+          subject-name: ${{ env.REGISTRY }}/${{ env.REPORTING_IMAGE_NAME }}
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
