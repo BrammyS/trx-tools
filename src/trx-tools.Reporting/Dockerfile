@@ -34,7 +34,5 @@ RUN apk upgrade musl
 WORKDIR /app
 COPY --from=base /app/publish .
 
-RUN chown -R dotnetuser:dotnetuser /app
-
-USER dotnetuser
+RUN chmod +x /app/trx-tools.Reporting
 ENTRYPOINT ["/app/trx-tools.Reporting"]
