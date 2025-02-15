@@ -15,8 +15,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  BASE_IMAGE_NAME: ${{ github.repository }}
-  REPORTING_IMAGE_NAME: ${{ env.BASE_IMAGE_NAME }}.reporting
+  REPORTING_IMAGE_NAME: ${{ github.repository }}.reporting
 
 jobs:
   test:
