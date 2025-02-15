@@ -47,7 +47,7 @@ jobs:
         with:
           report-type: html
           trx-directory: ./TestResults
-          report-file: ./report.html
+          report-file: ${{ github.workspace }}/report.html
 
       - name: Upload Test Report
         uses: actions/upload-artifact@v4
