@@ -99,7 +99,7 @@ The report tool can be used in a Github action to generate a report after runnin
   run: dotnet test --logger "trx" --results-directory ./TestResults
 
 - name: Generate report
-  uses: BrammyS/trx-tools@v1.1.0
+  uses: BrammyS/trx-tools@v1.1.1
   with:
     report-type: html
     trx-directory: ./TestResults
