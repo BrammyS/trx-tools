@@ -31,9 +31,10 @@ RUN adduser --disabled-password \
 # upgrade musl to remove potential vulnerability
 RUN apk upgrade musl
 
-USER dotnetuser
 WORKDIR /app
 COPY --from=base /app/publish .
 
-RUN chmod +x trx-tools.Reporting
+RUN chown -R dotnetuser:dotnetuser /app
+
+USER dotnetuser
 ENTRYPOINT ["/app/trx-tools.Reporting"]
