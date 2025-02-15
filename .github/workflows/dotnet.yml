@@ -38,7 +38,7 @@ jobs:
         run: dotnet test --logger "trx" --logger "GitHubActions" --results-directory ./TestResults
 
       - name: Generate report
-        uses: BrammyS/trx-tools@v1.1.1
+        uses: ./
         with:
           report-type: html
           trx-directory: ./TestResults
