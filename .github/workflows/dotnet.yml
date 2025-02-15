@@ -1,6 +1,11 @@
 name: .NET Build
+
+permissions:
+  contents: write
+
 on:
   push:
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
