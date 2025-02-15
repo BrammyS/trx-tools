@@ -1,5 +1,10 @@
 name: 'trx-tools.Reporting'
 description: 'Generate reports from multiple trx files'
+author: BrammyS
+branding:
+  icon: bar-chart
+  color: blue
+  
 inputs:
   report-type:
     description: 'Type of report to generate'
