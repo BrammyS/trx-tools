@@ -20,6 +20,6 @@ inputs:
     default: 'report.html'
 runs:
   using: 'docker'
-  image: 'ghcr.io/brammys/trx-tools.reporting:v1.0.3-beta.3'
+  image: 'docker://ghcr.io/brammys/trx-tools.reporting'
   args:
     - ${{ inputs.report-type }} ${{ inputs.trx-directory }} ${{ inputs.report-file }}
