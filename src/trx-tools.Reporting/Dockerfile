@@ -35,4 +35,5 @@ USER dotnetuser
 WORKDIR /app
 COPY --from=base /app/publish .
 
+RUN chmod +x trx-tools.Reporting
 ENTRYPOINT ["/app/trx-tools.Reporting"]
