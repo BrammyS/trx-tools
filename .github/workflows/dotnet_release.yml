@@ -1,20 +1,29 @@
 ﻿name: .NET Release
-
+  
 permissions:
-  contents: write
- 
+  contents: read
+  packages: write
+  attestations: write
+  id-token: write
+
 on:
   push:
     tags:
       - "v[0-9]+.[0-9]+.[0-9]+-beta"
       - "v[0-9]+.[0-9]+.[0-9]+-beta.[0-9]*"
       - "v[0-9]+.[0-9]+.[0-9]+"
+
+env:
+  REGISTRY: ghcr.io
+  BASE_IMAGE_NAME: ${{ github.repository }}
+  REPORTING_IMAGE_NAME: ${{ env.BASE_IMAGE_NAME }}.reporting
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ ubuntu-latest ]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -47,7 +56,7 @@ jobs:
 
       - name: Publish win-x64
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/win-x64 --self-contained true --runtime win-x64
-      
+
       - name: Publish linux-x64
         run: dotnet publish ./src/trx-tools.Reporting/trx-tools.Reporting.csproj --configuration Release --output ./publish/linux-x64 --self-contained true --runtime linux-x64
 
@@ -57,3 +66,33 @@ jobs:
           files: |
             ./publish/linux-x64/trx-tools.Reporting
             ./publish/win-x64/trx-tools.Reporting.exe
+
+      - name: Docker login
+        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.REPORTING_IMAGE_NAME }}
+
+      - name: Build and push image
+        id: push
+        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+        with:
+          context: .
+          file: ./src/trx-tools.Reporting/Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+  
+      - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-name: ${{ env.REGISTRY }}/${{ env.REPORTING_IMAGE_NAME}}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
