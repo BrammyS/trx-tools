@@ -14,12 +14,12 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - run: echo ${{matrix.os}}
 
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
          dotnet-version: '9.0.x'
 
@@ -50,7 +50,7 @@ jobs:
           report-file: report.html
 
       - name: Upload Test Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: test-report
           path: report.html
