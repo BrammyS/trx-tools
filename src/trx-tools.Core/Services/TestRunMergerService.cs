@@ -14,7 +14,7 @@ public class TestRunMergerService(ILogger<TestRunMergerService> logger) : ITestR
 {
     public TestRun MergeTestRuns(List<TestRun> testRuns)
     {
-        ArgumentNullException.ThrowIfNull(testRuns, nameof(testRuns));
+        ArgumentNullException.ThrowIfNull(testRuns);
         logger.LogInformation("Merging {Count} test runs", testRuns.Count);
         
         var mergedUnitTestResults = new List<UnitTestResult>();

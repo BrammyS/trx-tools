@@ -10,7 +10,7 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
 {
     public ParsedTestRun ParseTestRun(TestRun testRun)
     {
-        ArgumentNullException.ThrowIfNull(testRun, nameof(testRun));
+        ArgumentNullException.ThrowIfNull(testRun);
         
         logger.LogInformation("Parsing test run");
         var parsedResults = new List<ParsedUnitTestResult>();
