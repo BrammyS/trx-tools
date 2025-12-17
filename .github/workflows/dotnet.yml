@@ -24,7 +24,7 @@ jobs:
          dotnet-version: '10.0.x'
 
       - name: Load nuget cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ~/.nuget/packages
@@ -50,7 +50,7 @@ jobs:
           report-file: report.html
 
       - name: Upload Test Report
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: test-report
           path: report.html
