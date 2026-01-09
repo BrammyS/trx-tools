@@ -37,7 +37,7 @@ public class HtmlCommandTests
         var result = command.Description;
 
         // Assert
-        result.Should().Be("Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html");
+        result.Should().Be("Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html [--only-latest] [--only-files file1.trx file2.trx]");
     }
     
     [Test]
@@ -53,7 +53,7 @@ public class HtmlCommandTests
         await command.ExecuteAsync(args);
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1]), Times.Once);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1], false, null), Times.Once);
     }
     
     [Test]
@@ -69,7 +69,7 @@ public class HtmlCommandTests
         await command.ExecuteAsync(args);
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>()), Times.Never);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>()), Times.Never);
     }
     
     [Test]
@@ -85,6 +85,6 @@ public class HtmlCommandTests
         await command.ExecuteAsync(args);
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>()), Times.Never);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>()), Times.Never);
     }
 }
