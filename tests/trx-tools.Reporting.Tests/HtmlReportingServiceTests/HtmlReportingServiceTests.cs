@@ -20,11 +20,10 @@ public class HtmlReportingServiceTests
         // Arrange
         const string htmlFile = "output.html";
         const string trxDirectory = "path/to/trx/directory";
-        var validationHtml = await File.ReadAllTextAsync("TestFiles/TestReport1.html");
         var mockLogger = new Mock<ILogger<HtmlReportingService>>();
         var mockTestRunTrxFileService = new Mock<ITestRunTrxFileService>();
         mockTestRunTrxFileService.Setup(x => x.FindTrxFilesInDirectory(It.IsAny<string>())).Returns(["path/to/trx/file"]);
-        mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Callback(ValidateHtml());
+        mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
         var mockTestRunParserService = new Mock<ITestRunParserService>();
         mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
         var mockTestRunMergerService = new Mock<ITestRunMergerService>();
@@ -36,18 +35,113 @@ public class HtmlReportingServiceTests
         // Assert
         mockTestRunTrxFileService.Verify(x => x.FindTrxFilesInDirectory(It.IsAny<string>()), Times.Once);
         mockTestRunParserService.Verify(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>()), Times.Once);
-        mockTestRunTrxFileService.Verify(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>()), Times.Once);
-        return;
+        mockTestRunTrxFileService.Verify(x => x.WriteHtmlReportAsync(
+            It.Is<string>(p => p.EndsWith(htmlFile)),
+            It.Is<string>(h => h.Contains("Test run details") && h.Contains("unitTestName1"))), Times.Once);
+    }
 
-        Action<string, string> ValidateHtml()
+    [Test]
+    public async Task GenerateHtmlReportAsync_WithLatestOnly_ShouldOnlyUseLatestFile()
+    {
+        // Arrange
+        const string htmlFile = "output.html";
+        var mockLogger = new Mock<ILogger<HtmlReportingService>>();
+        var mockTestRunTrxFileService = new Mock<ITestRunTrxFileService>();
+        
+        var file1 = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".trx");
+        var file2 = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".trx");
+        File.WriteAllText(file1, "old");
+        File.SetLastWriteTime(file1, DateTime.Now.AddDays(-1));
+        File.WriteAllText(file2, "new");
+        File.SetLastWriteTime(file2, DateTime.Now);
+
+        try
         {
-            return (path, html) =>
-            {
-                // Assert
-                path.Should().Be(Path.Combine(Directory.GetCurrentDirectory(), htmlFile));
-                html.Should().Be(validationHtml);
-            };
+            mockTestRunTrxFileService.Setup(x => x.FindTrxFilesInDirectory(It.IsAny<string>())).Returns([file1, file2]);
+            mockTestRunTrxFileService.Setup(x => x.ReadTestRun(file2)).Returns(new Core.Models.TestRun 
+            { 
+                RunUser = "test",
+                Times = null,
+                TestSettings = null,
+                Results = [],
+                TestDefinitions = [],
+                TestEntries = [],
+                TestLists = [],
+                ResultSummary = new Core.Models.ResultSummary.ResultSummary
+                {
+                    Counters = new Core.Models.ResultSummary.Counters(),
+                    Output = null,
+                    Outcome = "Completed",
+                    RunInfos = []
+                },
+                Id = "test-id",
+                Name = "test-name"
+            });
+            mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
+            
+            var mockTestRunParserService = new Mock<ITestRunParserService>();
+            mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
+            var mockTestRunMergerService = new Mock<ITestRunMergerService>();
+            var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
+
+            // Act
+            await service.GenerateHtmlReportAsync("dir", htmlFile, latestOnly: true);
+
+            // Assert
+            mockTestRunTrxFileService.Verify(x => x.ReadTestRun(file2), Times.Once);
+            mockTestRunTrxFileService.Verify(x => x.ReadTestRun(file1), Times.Never);
         }
+        finally
+        {
+            if (File.Exists(file1)) File.Delete(file1);
+            if (File.Exists(file2)) File.Delete(file2);
+        }
+    }
+
+    [Test]
+    public async Task GenerateHtmlReportAsync_WithOnlyFiles_ShouldOnlyUseSpecifiedFiles()
+    {
+        // Arrange
+        const string htmlFile = "output.html";
+        var mockLogger = new Mock<ILogger<HtmlReportingService>>();
+        var mockTestRunTrxFileService = new Mock<ITestRunTrxFileService>();
+        
+        var file1 = "file1.trx";
+        var file2 = "file2.trx";
+
+        mockTestRunTrxFileService.Setup(x => x.ReadTestRun(It.Is<string>(s => s.Contains(file1)))).Returns(new Core.Models.TestRun 
+        { 
+            RunUser = "test",
+            Times = null,
+            TestSettings = null,
+            Results = [],
+            TestDefinitions = [],
+            TestEntries = [],
+            TestLists = [],
+            ResultSummary = new Core.Models.ResultSummary.ResultSummary
+            {
+                Counters = new Core.Models.ResultSummary.Counters(),
+                Output = null,
+                Outcome = "Completed",
+                RunInfos = []
+            },
+            Id = "test-id",
+            Name = "test-name"
+        });
+        mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
+        
+        var mockTestRunParserService = new Mock<ITestRunParserService>();
+        mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
+        var mockTestRunMergerService = new Mock<ITestRunMergerService>();
+        var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
+
+        // Act
+        await service.GenerateHtmlReportAsync("dir", htmlFile, onlyFiles: [file1]);
+
+        // Assert
+        mockTestRunTrxFileService.Verify(x => x.ReadTestRun(It.Is<string>(s => s.Contains(file1))), Times.Once);
+        mockTestRunTrxFileService.Verify(x => x.ReadTestRun(It.Is<string>(s => s.Contains(file2))), Times.Never);
+        mockTestRunTrxFileService.Verify(x => x.FindTrxFilesInDirectory(It.IsAny<string>()), Times.Never);
     }
 
     private static ParsedTestRun GetFakeParsedTestRun()

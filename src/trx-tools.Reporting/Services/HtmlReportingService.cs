@@ -14,13 +14,27 @@ public class HtmlReportingService(
     ITestRunParserService parserService
 ) : IHtmlReportingService
 {
-    public async Task GenerateHtmlReportAsync(string trxDirectory, string outputFile)
+    public async Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, bool latestOnly = false, IEnumerable<string>? onlyFiles = null)
     {
-        var trxFiles = fileService.FindTrxFilesInDirectory(Path.Combine(Directory.GetCurrentDirectory(), trxDirectory));
+        string[] trxFiles;
+        if (onlyFiles != null && onlyFiles.Any())
+        {
+            trxFiles = onlyFiles.ToArray();
+        }
+        else
+        {
+            trxFiles = fileService.FindTrxFilesInDirectory(Path.Combine(Directory.GetCurrentDirectory(), trxDirectory));
+        }
+
         if (trxFiles.Length == 0)
         {
-            logger.LogError("No TRX files found in directory {Directory}", trxDirectory);
+            logger.LogError("No TRX files found");
             return;
+        }
+
+        if (latestOnly)
+        {
+            trxFiles = [trxFiles.OrderByDescending(File.GetLastWriteTime).First()];
         }
 
         var testRun = GetTestRun(trxFiles);

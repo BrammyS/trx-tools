@@ -2,5 +2,5 @@
 
 public interface IHtmlReportingService
 {
-    Task GenerateHtmlReportAsync(string trxDirectory, string outputFile);
+    Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, bool latestOnly = false, IEnumerable<string>? onlyFiles = null);
 }
