@@ -37,7 +37,7 @@ public class HtmlCommandTests
         var result = command.Description;
 
         // Assert
-        result.Should().Be("Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html [--only-latest] [--only-files file1.trx file2.trx]");
+        result.Should().Be("Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html [--include-output] [--only-latest] [--only-files file1.trx file2.trx]");
     }
     
     [Test]
@@ -53,7 +53,23 @@ public class HtmlCommandTests
         await command.ExecuteAsync(args);
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1], false, null), Times.Once);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1], false, null, false), Times.Once);
+    }
+
+    [Test]
+    public async Task ExecuteAsync_Should_Call_GenerateHtmlReportAsync_With_IncludeOutput_When_Flag_Present()
+    {
+        // Arrange
+        var mockLogger = new Mock<ILogger<HtmlCommand>>();
+        var mockIHtmlReportingService = new Mock<IHtmlReportingService>();
+        var command = new HtmlCommand(mockLogger.Object, mockIHtmlReportingService.Object);
+        var args = new[] { "path/to/trx/directory", "output.html", "--include-output" };
+
+        // Act
+        await command.ExecuteAsync(args);
+
+        // Assert
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1], false, null, true), Times.Once);
     }
     
     [Test]
@@ -69,7 +85,7 @@ public class HtmlCommandTests
         await command.ExecuteAsync(args);
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>()), Times.Never);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>(), It.IsAny<bool>()), Times.Never);
     }
     
     [Test]
@@ -85,6 +101,6 @@ public class HtmlCommandTests
         await command.ExecuteAsync(args);
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>()), Times.Never);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>(), It.IsAny<bool>()), Times.Never);
     }
 }

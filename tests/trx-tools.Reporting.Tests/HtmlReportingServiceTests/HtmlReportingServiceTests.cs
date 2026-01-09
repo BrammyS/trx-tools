@@ -37,7 +37,31 @@ public class HtmlReportingServiceTests
         mockTestRunParserService.Verify(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>()), Times.Once);
         mockTestRunTrxFileService.Verify(x => x.WriteHtmlReportAsync(
             It.Is<string>(p => p.EndsWith(htmlFile)),
-            It.Is<string>(h => h.Contains("Test run details") && h.Contains("unitTestName1"))), Times.Once);
+            It.Is<string>(h => h.Contains("Test run details") && h.Contains("unitTestName1") && !h.Contains("<summary>Standard Output</summary>"))), Times.Once);
+    }
+
+    [Test]
+    public async Task GenerateHtmlReportAsync_Should_Include_StdOut_In_Html_When_IncludeOutput_Is_True()
+    {
+        // Arrange
+        const string htmlFile = "output.html";
+        const string trxDirectory = "path/to/trx/directory";
+        var mockLogger = new Mock<ILogger<HtmlReportingService>>();
+        var mockTestRunTrxFileService = new Mock<ITestRunTrxFileService>();
+        mockTestRunTrxFileService.Setup(x => x.FindTrxFilesInDirectory(It.IsAny<string>())).Returns(["path/to/trx/file"]);
+        mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
+        var mockTestRunParserService = new Mock<ITestRunParserService>();
+        mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
+        var mockTestRunMergerService = new Mock<ITestRunMergerService>();
+        var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
+
+        // Act
+        await service.GenerateHtmlReportAsync(trxDirectory, htmlFile, includeOutput: true);
+
+        // Assert
+        mockTestRunTrxFileService.Verify(x => x.WriteHtmlReportAsync(
+            It.Is<string>(p => p.EndsWith(htmlFile)),
+            It.Is<string>(h => h.Contains("<summary>Standard Output</summary>"))), Times.Once);
     }
 
     [Test]

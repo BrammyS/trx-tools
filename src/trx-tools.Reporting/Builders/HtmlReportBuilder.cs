@@ -11,6 +11,7 @@ public class HtmlReportBuilder
     private uint _passedTests;
     private uint _failedTests;
     private uint _skippedTests;
+    private bool _includeOutput;
     private TimeSpan _runDuration = TimeSpan.Zero;
     private readonly List<ParsedUnitTestResult> _testResults = [];
     private readonly List<string> _messages = [];
@@ -36,6 +37,12 @@ public class HtmlReportBuilder
     public HtmlReportBuilder WithSkippedTests(uint skipped)
     {
         _skippedTests = skipped;
+        return this;
+    }
+
+    public HtmlReportBuilder WithIncludedOutput(bool includeOutput)
+    {
+        _includeOutput = includeOutput;
         return this;
     }
 
@@ -88,7 +95,7 @@ public class HtmlReportBuilder
         return sb.ToString();
     }
 
-    private static void AddTestResults(StringBuilder sb, List<ParsedUnitTestResult> testRuns, bool open)
+    private void AddTestResults(StringBuilder sb, List<ParsedUnitTestResult> testRuns, bool open)
     {
         foreach (var codebaseGroup in testRuns.GroupBy(x => x.Codebase))
         {
@@ -107,6 +114,13 @@ public class HtmlReportBuilder
                     sb.AppendLine("<div class='error-info'>");
                     sb.AppendLine($"Error: <span class='error-message'><pre>{testResult.Output.ErrorInfo.Message}</pre></span><br>");
                     sb.AppendLine($"Stack trace: <span class='error-message'><pre>{testResult.Output.ErrorInfo.StackTrace}</pre></span><br>");
+                    sb.AppendLine("</div>");
+                }
+
+                if (_includeOutput && !string.IsNullOrWhiteSpace(testResult.Output?.StdOut))
+                {
+                    sb.AppendLine("<div class='error-info'>");
+                    sb.AppendLine($"<details><summary>Standard Output</summary><pre>{testResult.Output.StdOut}</pre></details>");
                     sb.AppendLine("</div>");
                 }
 

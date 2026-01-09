@@ -14,7 +14,7 @@ public class HtmlReportingService(
     ITestRunParserService parserService
 ) : IHtmlReportingService
 {
-    public async Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, bool latestOnly = false, IEnumerable<string>? onlyFiles = null)
+    public async Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, bool latestOnly = false, IEnumerable<string>? onlyFiles = null, bool includeOutput = false)
     {
         string[] trxFiles;
         if (onlyFiles != null && onlyFiles.Any())
@@ -43,7 +43,8 @@ public class HtmlReportingService(
             .WithPassedTests(parsedTestRun.ResultSummary.Counters.Passed)
             .WithFailedTests(parsedTestRun.ResultSummary.Counters.Failed)
             .WithSkippedTests(parsedTestRun.ResultSummary.Counters.GetSkippedTestCount())
-            .WithTotalTests(parsedTestRun.ResultSummary.Counters.Total);
+            .WithTotalTests(parsedTestRun.ResultSummary.Counters.Total)
+            .WithIncludedOutput(includeOutput);
         
         if (parsedTestRun.ResultSummary.Output is not null)
         {

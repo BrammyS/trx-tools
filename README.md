@@ -122,9 +122,14 @@ To generate a report from a TRX file, use the following command:
 trx-tools.Reporting html "path/to/trxFolder" "path/to/output/file.html"
 ```
 
-#### Filtering Options
+#### Options
 
-You can filter which TRX files are included in the report using the following optional flags:
+You can customize the report generation using the following optional flags:
+
+**`--include-output`** - Include the standard output (StdOut) in the report (hidden in a collapsed section by default):
+```sh
+trx-tools.Reporting html "path/to/trxFolder" "report.html" --include-output
+```
 
 **`--only-latest`** - Only use the most recently modified TRX file:
 ```sh
