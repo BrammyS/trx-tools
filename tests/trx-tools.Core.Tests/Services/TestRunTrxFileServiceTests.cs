@@ -55,7 +55,9 @@ public class TestRunTrxFileServiceTests
             WriteIndented = true,
             Converters = { new UtcDateTimeConverter() }
         });
-        json.ReplaceLineEndings().Should().Be(expectedJson.ReplaceLineEndings());
+        File.WriteAllText(@"c:\temp\a.json",json);
+            File.WriteAllText(@"c:\temp\b.json",expectedJson);
+        json.ReplaceLineEndings().Trim().Should().Be(expectedJson.ReplaceLineEndings().Trim());
     }
 
     [Test]

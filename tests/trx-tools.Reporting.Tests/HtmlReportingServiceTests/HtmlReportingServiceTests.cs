@@ -168,6 +168,30 @@ public class HtmlReportingServiceTests
         mockTestRunTrxFileService.Verify(x => x.FindTrxFilesInDirectory(It.IsAny<string>()), Times.Never);
     }
 
+    [Test]
+    public async Task GenerateHtmlReportAsync_Should_Generate_Pretty_Report_When_Pretty_Is_True()
+    {
+        // Arrange
+        const string htmlFile = "output-pretty.html";
+        const string trxDirectory = "path/to/trx/directory";
+        var mockLogger = new Mock<ILogger<HtmlReportingService>>();
+        var mockTestRunTrxFileService = new Mock<ITestRunTrxFileService>();
+        mockTestRunTrxFileService.Setup(x => x.FindTrxFilesInDirectory(It.IsAny<string>())).Returns(["path/to/trx/file"]);
+        mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
+        var mockTestRunParserService = new Mock<ITestRunParserService>();
+        mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
+        var mockTestRunMergerService = new Mock<ITestRunMergerService>();
+        var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
+
+        // Act
+        await service.GenerateHtmlReportAsync(trxDirectory, htmlFile, pretty: true);
+
+        // Assert
+        mockTestRunTrxFileService.Verify(x => x.WriteHtmlReportAsync(
+            It.Is<string>(p => p.EndsWith(htmlFile)),
+            It.Is<string>(h => h.Contains("class='stats-grid'") && h.Contains("class='filter-bar'") && h.Contains("Test Execution Report"))), Times.Once);
+    }
+
     private static ParsedTestRun GetFakeParsedTestRun()
     {
         return new ParsedTestRun(
@@ -179,12 +203,12 @@ public class HtmlReportingServiceTests
                 Finish = default
             },
             [
-                new ParsedUnitTestResult(true, "pass", "unitTestClass", "unitTestName1", "file.dll", TimeSpan.FromSeconds(1), new UnitTestResultOutput
+                new ParsedUnitTestResult(true, "pass", "unitTestClass", "unitTestName1", "file.dll", "Category1", TimeSpan.FromSeconds(1), new UnitTestResultOutput
                 {
                     StdOut = "message",
                     ErrorInfo = null!
                 }),
-                new ParsedUnitTestResult(false, "fail", "unitTestClass", "unitTestName2", "file.dll", TimeSpan.FromSeconds(1), new UnitTestResultOutput
+                new ParsedUnitTestResult(false, "fail", "unitTestClass", "unitTestName2", "file.dll", "Category1", TimeSpan.FromSeconds(1), new UnitTestResultOutput
                 {
                     StdOut = "message",
                     ErrorInfo = new ErrorInfo
@@ -193,7 +217,7 @@ public class HtmlReportingServiceTests
                         StackTrace = "stack"
                     }
                 }),
-                new ParsedUnitTestResult(false, Constants.NotExecutedTestRunOutcome, "unitTestClass", "unitTestName3", "file.dll", TimeSpan.FromSeconds(1), new UnitTestResultOutput
+                new ParsedUnitTestResult(false, Constants.NotExecutedTestRunOutcome, "unitTestClass", "unitTestName3", "file.dll", "Category2", TimeSpan.FromSeconds(1), new UnitTestResultOutput
                 {
                     StdOut = "message",
                     ErrorInfo = null!

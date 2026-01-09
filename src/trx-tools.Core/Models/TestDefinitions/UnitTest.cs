@@ -12,6 +12,8 @@ public class UnitTest
 
     public required TestMethod TestMethod { get; set; }
 
+    public TestCategory? TestCategory { get; set; }
+
     [XmlAttribute("name")] public required string Name { get; set; }
 
     [XmlAttribute("storage")] public required string Storage { get; set; }

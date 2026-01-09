@@ -131,6 +131,11 @@ You can customize the report generation using the following optional flags:
 trx-tools.Reporting html "path/to/trxFolder" "report.html" --include-output
 ```
 
+**`--pretty`** - Generate a modern, stylized HTML report with dashboard and interactive filtering:
+```sh
+trx-tools.Reporting html "path/to/trxFolder" "report.html" --pretty
+```
+
 **`--only-latest`** - Only use the most recently modified TRX file:
 ```sh
 trx-tools.Reporting html "path/to/trxFolder" "report.html" --only-latest

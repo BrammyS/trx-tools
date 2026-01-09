@@ -7,7 +7,7 @@ namespace trx_tools.HtmlReporting.Commands;
 public class HtmlCommand(ILogger<HtmlCommand> logger, IHtmlReportingService htmlReportingService) : ICommand
 {
     public string Name => "html";
-    public string Description => "Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html [--include-output] [--only-latest] [--only-files file1.trx file2.trx]";
+    public string Description => "Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html [--include-output] [--pretty] [--only-latest] [--only-files file1.trx file2.trx]";
 
     public async Task ExecuteAsync(string[] args)
     {
@@ -17,9 +17,10 @@ public class HtmlCommand(ILogger<HtmlCommand> logger, IHtmlReportingService html
         var outputFile = args[1];
         var latestOnly = args.Contains("--only-latest");
         var includeOutput = args.Contains("--include-output");
+        var pretty = args.Contains("--pretty");
         var onlyFiles = ParseOnlyFiles(args, trxDirectory);
 
-        await htmlReportingService.GenerateHtmlReportAsync(trxDirectory, outputFile, latestOnly, onlyFiles, includeOutput);
+        await htmlReportingService.GenerateHtmlReportAsync(trxDirectory, outputFile, latestOnly, onlyFiles, includeOutput, pretty);
     }
 
     private static List<string>? ParseOnlyFiles(string[] args, string trxDirectory)

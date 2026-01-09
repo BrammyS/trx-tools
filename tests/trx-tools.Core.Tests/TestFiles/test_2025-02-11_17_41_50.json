@@ -3035,6 +3035,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordGatewayBotDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGatewayBotData\\\\DiscordGatewayBotData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGatewayBotData\\\\DiscordGatewayBotData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "fc056afc-4913-e3e3-3552-38827b7cce99"
@@ -3049,6 +3050,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandOptionDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionOptionData\\\\DiscordInteractionCommandOptionData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionOptionData\\\\DiscordInteractionCommandOptionData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ccac980e-a27a-c2a6-9ac7-56b70ec1314f"
@@ -3063,6 +3065,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandCallbackDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionCallbackData\\\\DiscordInteractionCommandCallbackData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionCallbackData\\\\DiscordInteractionCommandCallbackData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "cfc3b960-f05e-6940-444f-a0acfba01f9e"
@@ -3077,6 +3080,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordGatewayBotDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2a4a185d-2064-65a4-19a0-8da89e0740b4"
@@ -3091,6 +3095,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRolePositionsTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "25d6cb24-a071-6207-4817-98a3b94b4861"
@@ -3105,6 +3110,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandResolvedDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "57e26303-cec9-0b94-c317-de19d50069b9"
@@ -3119,6 +3125,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandOptionDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionOptionData\\\\DiscordInteractionCommandOptionData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionOptionData\\\\DiscordInteractionCommandOptionData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "45c8e4f8-5732-0bc7-5528-84d27ead1a36"
@@ -3133,6 +3140,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandOptionDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "58be2732-faa1-2517-d7a1-7dbe4bd80008"
@@ -3147,6 +3155,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedAuthorDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedAuthorData\\\\DiscordEmbedAuthorData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedAuthorData\\\\DiscordEmbedAuthorData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "9040f15a-c92d-f223-c2c1-a807026f70bd"
@@ -3161,6 +3170,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_not_detect_channel_perm(ManageRoles)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_not_detect_channel_perm(ManageRoles)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2cfac0e0-48d9-5ff4-8558-14a9f4395de3"
@@ -3175,6 +3185,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u0022349184\u0022,ViewChannel, SendTtsMessages, EmbedLinks, ReadMessageHistory, UseExternalEmojis)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u0022349184\u0022,ViewChannel, SendTtsMessages, EmbedLinks, ReadMessageHistory, UseExternalEmojis)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "451c1fb5-5693-fbfe-f3a4-0bd3454b5f6d"
@@ -3189,6 +3200,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRolePositionsTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d98dbdff-05ef-bb5f-2eb2-2d2de5ac0da2"
@@ -3203,6 +3215,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedImageDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "55622ce7-9ba6-6ab0-309f-637c98c72fd7"
@@ -3217,6 +3230,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildVerificationLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4abf494b-a0fe-f1c6-c7a1-37cb9431b7ec"
@@ -3231,6 +3245,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u00220\u0022,None)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u00220\u0022,None)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ded3f8f6-ea71-53e4-ca2b-f7f2cb196b4f"
@@ -3245,6 +3260,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u0022120259084800\u0022,Stream, ManageThreads, UsePublicThreads, UsePrivateThreads)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u0022120259084800\u0022,Stream, ManageThreads, UsePublicThreads, UsePrivateThreads)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "73fe2b99-9a18-0526-c59b-132952b2e483"
@@ -3259,6 +3275,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeScreenDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2e3f7473-1896-f60d-3d9e-c986534517ea"
@@ -3273,6 +3290,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4104bdcf-77f2-00e2-168e-587a82bdc8fa"
@@ -3287,6 +3305,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRolePositionsTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4df4b21d-f03b-cf9d-ae4f-71e054687f1b"
@@ -3301,6 +3320,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordCreateGuildRoleTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole1.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole1.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c19cf423-2d9d-7322-c1dc-950833cfc237"
@@ -3315,6 +3335,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData4.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData4.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "a61e3a0c-a520-1a2c-9790-dbf1971ed2e6"
@@ -3329,6 +3350,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(UsePublicThreads)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(UsePublicThreads)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "7b83f906-d7ef-afde-a939-978c9d90c58a"
@@ -3343,6 +3365,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandResolvedDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c7b2b140-7975-00a4-4844-34cf8d11029f"
@@ -3357,6 +3380,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildVerificationLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "8cc1f3b5-f573-556c-c243-a511e69126d0"
@@ -3371,6 +3395,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedImageDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedImageData\\\\DiscordEmbedImageData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedImageData\\\\DiscordEmbedImageData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5c2318cc-216a-fbde-2869-f4b79644af37"
@@ -3385,6 +3410,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordCreateGuildRoleTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0a08d9a8-c2f0-a8f3-b374-fa05ac37714e"
@@ -3399,6 +3425,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(KickMembers, ManageThreads)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(KickMembers, ManageThreads)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "e53420fe-02c6-eb83-28d8-e7b701e7e8f0"
@@ -3413,6 +3440,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRolePositionsTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d007515d-3df3-9d67-54aa-025498f0ae45"
@@ -3427,6 +3455,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d020fbc9-6187-74f2-aafc-ff9e7b98eac4"
@@ -3441,6 +3470,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(PrioritySpeaker)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(PrioritySpeaker)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "57053152-7fe0-d359-acb3-fbc908bbe3c1"
@@ -3455,6 +3485,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeScreenDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "df8ae06f-a17c-f135-42df-0ddd849b35d3"
@@ -3469,6 +3500,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4845b4ac-0872-242a-4705-d4a30d6a52fe"
@@ -3483,6 +3515,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeChannelDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeChannelData\\\\DiscordGuildWelcomeChannelData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeChannelData\\\\DiscordGuildWelcomeChannelData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "f2b89842-aaa9-c266-7b42-3b184107b2f4"
@@ -3497,6 +3530,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "9e8d4088-fb7e-c3cb-0aab-d99d8d0cd6e8"
@@ -3511,6 +3545,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildMfaLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMfaLevel\\\\DiscordGuildMfaLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMfaLevel\\\\DiscordGuildMfaLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "6b3a09c6-4344-3046-72c0-4adcf77af997"
@@ -3525,6 +3560,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_not_detect_channel_perm(KickMembers, ManageGuild, ViewGuildInsights)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_not_detect_channel_perm(KickMembers, ManageGuild, ViewGuildInsights)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "9c488537-e95f-9b8f-4fc7-f8f369e97236"
@@ -3539,6 +3575,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u0022174144\u0022,AddReactions, SendMessages, ManageMessages, AttachFiles, MentionEveryone)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u0022174144\u0022,AddReactions, SendMessages, ManageMessages, AttachFiles, MentionEveryone)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "8af23b73-0728-cd31-0fb7-d2dc92040db7"
@@ -3553,6 +3590,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildMfaLevelTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "221926e5-e976-5964-f705-7af799d58c3a"
@@ -3567,6 +3605,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordCreateGuildRoleTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole1.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole1.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "86014362-174f-d9f2-5a9b-169fdf1a6bd9"
@@ -3581,6 +3620,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u00226442975488\u0022,PrioritySpeaker, ViewGuildInsights, UseApplicationCommands, RequestToSpeak)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u00226442975488\u0022,PrioritySpeaker, ViewGuildInsights, UseApplicationCommands, RequestToSpeak)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "64effd5a-2089-f18e-1a44-147b9576f22c"
@@ -3595,6 +3635,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedProviderDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedProviderData\\\\DiscordEmbedProviderData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedProviderData\\\\DiscordEmbedProviderData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "3144f92f-b742-5a15-6228-7269062adf31"
@@ -3609,6 +3650,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordSessionStartLimitDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "54223f7e-0fa1-3b15-149e-b9fcc2226128"
@@ -3623,6 +3665,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.DiscordCreateApplicationCommandTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "7956c805-ef21-3278-aafa-4e1f68dae25d"
@@ -3637,6 +3680,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordCreateGuildRoleTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordCreateGuildRole\\\\DiscordCreateGuildRole.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5e6c50a9-8a97-9d4f-63e8-b4084dc45f7f"
@@ -3651,6 +3695,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPremiumTierTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "68ac130a-5010-c4ab-aac0-6ac5f59c0bd5"
@@ -3665,6 +3710,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5e3644b6-12d1-c761-efe4-1c148495adbd"
@@ -3679,6 +3725,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "428a7b86-bc1a-b330-eee1-d5f10c530358"
@@ -3693,6 +3740,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u0022671088820\u0022,BanMembers, ManageChannels, ManageGuild, ViewAuditLog, ManageNicknames, ManageWebhooks)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u0022671088820\u0022,BanMembers, ManageChannels, ManageGuild, ViewAuditLog, ManageNicknames, ManageWebhooks)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "987b8c31-f74b-0ba5-f6f8-1fabf1255d8b"
@@ -3707,6 +3755,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(MoveMembers)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(MoveMembers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "66e08778-967b-bda6-1f43-20a2890959ac"
@@ -3721,6 +3770,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_not_detect_channel_perm(ManageNicknames)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_not_detect_channel_perm(ManageNicknames)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "fc6c179b-4ccd-ecf1-772d-8d489d463e5b"
@@ -3735,6 +3785,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.DiscordJsonErrorDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "870ffecd-025b-dbad-9b4c-80b8c5cd42bf"
@@ -3749,6 +3800,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordAddGuildMemberTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordAddGuildMember\\\\DiscordAddGuildMember.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordAddGuildMember\\\\DiscordAddGuildMember.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "00b443c2-2d26-6cfa-e3c6-36f9c03f6971"
@@ -3763,6 +3815,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.PropertyErrorInfoDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/PropertyErrorInfoData\\\\PropertyErrorInfoData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/PropertyErrorInfoData\\\\PropertyErrorInfoData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "e228d23b-ed8c-a29e-2a13-ebde4b57c0c0"
@@ -3777,6 +3830,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandOptionDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d0c4428b-e08b-8830-39af-651369358d2c"
@@ -3791,6 +3845,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandOptionChoiceDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionChoiceData\\\\DiscordApplicationCommandOptionChoiceData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionChoiceData\\\\DiscordApplicationCommandOptionChoiceData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "bce7a0fe-d2c2-e467-778c-0c3065ec3dc3"
@@ -3805,6 +3860,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(BanMembers, Connect, ManageThreads)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(BanMembers, Connect, ManageThreads)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "650f7144-18b0-2a95-e379-ed0b96db9832"
@@ -3819,6 +3875,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2144d215-94dc-3f3d-100b-1d37ec797434"
@@ -3833,6 +3890,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildNsfwLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildNsfwLevel\\\\DiscordGuildNsfwLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildNsfwLevel\\\\DiscordGuildNsfwLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c4233672-f885-5928-3e09-0ee722b54944"
@@ -3847,6 +3905,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordEmojiDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "aaf74023-64f6-5ec7-6524-8cf11203e1b9"
@@ -3861,6 +3920,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildRoleDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildRoleData\\\\DiscordGuildRoleData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildRoleData\\\\DiscordGuildRoleData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5d2c5a6c-32f0-9888-53b6-6fff9d0166f2"
@@ -3875,6 +3935,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPreviewDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "634d6596-6510-0661-d975-75c361fe3992"
@@ -3889,6 +3950,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.DiscordCreateApplicationCommandTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordCreateApplicationCommand\\\\DiscordCreateApplicationCommand.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordCreateApplicationCommand\\\\DiscordCreateApplicationCommand.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "819b0740-fedf-d8bd-a6e8-8ca500d01b1a"
@@ -3903,6 +3965,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPremiumTierTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "aa22230c-d539-3285-d54d-7848f5b8b0ec"
@@ -3917,6 +3980,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission5.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission5.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0b7731ed-3447-21bd-6712-50e5e9756f83"
@@ -3931,6 +3995,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_not_detect_channel_perm(ViewAuditLog)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_not_detect_channel_perm(ViewAuditLog)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c276518f-c3ab-48fe-223d-831f3afda0cf"
@@ -3945,6 +4010,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "60035e14-7272-4f03-1172-e326034a1a97"
@@ -3959,6 +4025,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "b0858d53-9e31-0d5f-b001-97b729d118b3"
@@ -3973,6 +4040,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedFieldDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFieldData\\\\DiscordEmbedFieldData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFieldData\\\\DiscordEmbedFieldData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "982e225e-8813-623b-3626-8f6a8e686392"
@@ -3987,6 +4055,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildMemberDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMemberData\\\\DiscordGuildMemberData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMemberData\\\\DiscordGuildMemberData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "f7aa90b7-cc17-6f41-57f5-7e15e7ddf3ec"
@@ -4001,6 +4070,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.DiscordJsonErrorDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4f50d03c-0700-414e-84b7-f5ecdd75e2c2"
@@ -4015,6 +4085,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.PropertyErrorInfoDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/PropertyErrorInfoData\\\\PropertyErrorInfoData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/PropertyErrorInfoData\\\\PropertyErrorInfoData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "cc5ff50d-d1a2-821e-02d5-3d9bb5ece51b"
@@ -4029,6 +4100,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2010920b-eae4-d222-bcd1-a399d35f94d8"
@@ -4043,6 +4115,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionResponseDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "7d5aefb1-f75e-19d0-da3b-510a223009cc"
@@ -4057,6 +4130,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedFieldDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFieldData\\\\DiscordEmbedFieldData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFieldData\\\\DiscordEmbedFieldData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "fdc22051-b379-31ac-6879-092312fcb27d"
@@ -4071,6 +4145,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeScreenDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "22b20d94-3c77-315d-7294-94cfb3c2c11f"
@@ -4085,6 +4160,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "fcf2e26a-ac6b-78dc-1a1c-f83631da49ff"
@@ -4099,6 +4175,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyCurrentUserNickTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "11289d72-081f-c0d4-46d1-0b7741d00907"
@@ -4113,6 +4190,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionRequestData\\\\DiscordInteractionCommandData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionRequestData\\\\DiscordInteractionCommandData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "3384a109-b220-a53e-60eb-9700b0bb5133"
@@ -4127,6 +4205,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedFooterDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "627d688d-93e4-fb51-5383-283d99d5a726"
@@ -4141,6 +4220,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u0022671088820\u0022,BanMembers, ManageChannels, ManageGuild, ViewAuditLog, ManageNicknames, ManageWebhooks)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u0022671088820\u0022,BanMembers, ManageChannels, ManageGuild, ViewAuditLog, ManageNicknames, ManageWebhooks)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "7b04742b-7d7a-6709-9719-d046bb44d3d9"
@@ -4155,6 +4235,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandResolvedDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "3cfbd234-656d-5412-70c9-a8d0359e8caf"
@@ -4169,6 +4250,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordAddGuildMemberTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ca244a23-669e-f912-8909-1ee4ad47014c"
@@ -4183,6 +4265,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0d9ac891-6e83-023d-83ff-f70d87167bca"
@@ -4197,6 +4280,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildMemberDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2fbfd620-ac5b-6664-e151-594d87a0289a"
@@ -4211,6 +4295,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "9972d937-64ec-8f02-73ba-8e6b50352851"
@@ -4225,6 +4310,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildNsfwLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildNsfwLevel\\\\DiscordGuildNsfwLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildNsfwLevel\\\\DiscordGuildNsfwLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "8f9c47dd-81c1-f945-e7ab-0dc973af9c68"
@@ -4239,6 +4325,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(AddReactions)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(AddReactions)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "f4d58c6f-6db8-5b12-cd92-82b837549d0b"
@@ -4253,6 +4340,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandCallbackDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionCallbackData\\\\DiscordInteractionCommandCallbackData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionCallbackData\\\\DiscordInteractionCommandCallbackData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "cff3d851-6967-4a79-1676-096478eab8cd"
@@ -4267,6 +4355,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandData\\\\DiscordApplicationCommandData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandData\\\\DiscordApplicationCommandData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "12fe4ae5-ca62-e1df-ee0f-6c52c73c00f5"
@@ -4281,6 +4370,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "7a180acb-860c-4671-7894-e56de56c4e39"
@@ -4295,6 +4385,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "149c907f-6600-d3b4-9dbe-10a96fa664b0"
@@ -4309,6 +4400,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0b814170-e2ef-d3e6-2225-7cd393deee8c"
@@ -4323,6 +4415,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ebc8b6d6-c1e8-a386-3ba3-04ce759b5c4a"
@@ -4337,6 +4430,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedThumbnailDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedThumbnailData\\\\DiscordEmbedThumbnailData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedThumbnailData\\\\DiscordEmbedThumbnailData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c86467a0-cdab-cd84-9b86-0e9d55749d3a"
@@ -4351,6 +4445,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedVideoDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedVideoData\\\\DiscordEmbedVideoData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedVideoData\\\\DiscordEmbedVideoData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2615a9a5-69ff-84d4-6342-7a776516d539"
@@ -4365,6 +4460,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u0022120259084800\u0022,Stream, ManageThreads, UsePublicThreads, UsePrivateThreads)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u0022120259084800\u0022,Stream, ManageThreads, UsePublicThreads, UsePrivateThreads)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2231cd70-d955-d86f-f9dd-a68812fce6a1"
@@ -4379,6 +4475,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildData\\\\DiscordGuildData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildData\\\\DiscordGuildData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c52a4a36-e675-ae0d-3790-63a1fd08e82c"
@@ -4393,6 +4490,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.DiscordJsonErrorDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "193add6b-b81f-2b8e-67f6-49e4b6a4b4a1"
@@ -4407,6 +4505,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedFieldDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "953b21a0-54ed-574a-e902-f2c96a48a4b9"
@@ -4421,6 +4520,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDefaultMessageNotificationLevelTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ce3ffcdc-1d2e-7a6f-955f-792986b70700"
@@ -4435,6 +4535,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDefaultMessageNotificationLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "b4c14011-1f0c-7774-c833-6f6b54b7cb8c"
@@ -4449,6 +4550,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(ManageGuild, SendTtsMessages)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(ManageGuild, SendTtsMessages)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "819b6fcf-ca41-83d0-913d-619de40af1f9"
@@ -4463,6 +4565,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedFooterDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFooterData\\\\DiscordEmbedFooterData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFooterData\\\\DiscordEmbedFooterData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "af15e3bb-b421-9ca6-0372-97459e0b1a58"
@@ -4477,6 +4580,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4558081b-e75d-ca79-f911-7d5ce17cad31"
@@ -4491,6 +4595,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandResolvedDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c6b798f7-43ba-642e-9650-32b797669787"
@@ -4505,6 +4610,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildMemberTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildMember\\\\DiscordModifyGuildMember.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildMember\\\\DiscordModifyGuildMember.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "b57de711-9cdc-d065-2d09-cfc74eabca09"
@@ -4519,6 +4625,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionResponseDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "934cadcd-131c-d501-0af5-e963ea16ff8c"
@@ -4533,6 +4640,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.DiscordCreateApplicationCommandTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordCreateApplicationCommand\\\\DiscordCreateApplicationCommand.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordCreateApplicationCommand\\\\DiscordCreateApplicationCommand.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "853813cd-4586-4c1f-9a8b-07eed5ded98b"
@@ -4547,6 +4655,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5f8f1cdb-7f88-4cb5-ad9d-f03304ea5269"
@@ -4561,6 +4670,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "3f4935b4-58d6-8ac0-adce-4c54ee685dc4"
@@ -4575,6 +4685,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildVerificationLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "6af769c3-8e36-dd0f-3b2c-af64b2deb3c7"
@@ -4589,6 +4700,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedVideoDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "9b90cd76-adfe-05f3-29ce-46b75839a1ac"
@@ -4603,6 +4715,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedFooterDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFooterData\\\\DiscordEmbedFooterData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedFooterData\\\\DiscordEmbedFooterData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "73725613-d248-c33d-6c11-56f8c72b1e4b"
@@ -4617,6 +4730,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2302f77c-34ab-a136-0fb9-730e7c8daa74"
@@ -4631,6 +4745,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(UsePrivateThreads)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(UsePrivateThreads)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "59aff7f1-cd4b-d573-33f5-d67e0a381370"
@@ -4645,6 +4760,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u002244040192\u0022,Speak, DeafenMembers, UseVoiceActivity)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u002244040192\u0022,Speak, DeafenMembers, UseVoiceActivity)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "9d1be07a-e0e1-309f-df1e-64b8ba9c70d6"
@@ -4659,6 +4775,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionResponseDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ebcf7916-1d24-f1b0-4404-49e2f2c99bcc"
@@ -4673,6 +4790,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u0022174144\u0022,AddReactions, SendMessages, ManageMessages, AttachFiles, MentionEveryone)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u0022174144\u0022,AddReactions, SendMessages, ManageMessages, AttachFiles, MentionEveryone)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "53c831b4-9b4e-8342-410c-b290ae0ff910"
@@ -4687,6 +4805,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRolePositionsTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRolePositions\\\\DiscordModifyGuildRolePositions2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "a990faae-0dc5-d560-eb69-599b38261bbd"
@@ -4701,6 +4820,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordCreateGuildRoleTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4d7f6526-f17b-292b-c8f1-3e4f2196f4b2"
@@ -4715,6 +4835,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "96ed7268-760e-9213-9e1c-5ca711211999"
@@ -4729,6 +4850,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u00220\u0022,None)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u00220\u0022,None)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "15195d93-42af-449f-52db-0ab6d48d29fd"
@@ -4743,6 +4865,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_not_detect_channel_perm(BanMembers, Administrator)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_not_detect_channel_perm(BanMembers, Administrator)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "10200cdf-7fd0-0d07-a520-4de34a066fbe"
@@ -4757,6 +4880,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPremiumTierTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "798790d7-bad2-06c1-b61d-fedc48c586b0"
@@ -4771,6 +4895,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedAuthorDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "7c041767-19a7-8596-fe64-a935d32fdedd"
@@ -4785,6 +4910,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordAddGuildMemberTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordAddGuildMember\\\\DiscordAddGuildMember.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordAddGuildMember\\\\DiscordAddGuildMember.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "3f0b05a8-7da3-5131-8fbc-dbca7bbb3c5c"
@@ -4799,6 +4925,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "1e9a3cac-2e49-cc6d-e9c4-f88ad8054c48"
@@ -4813,6 +4940,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildRoleDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "50fcb472-229b-b094-5f17-fd38c472bbf5"
@@ -4827,6 +4955,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u002244040192\u0022,Speak, DeafenMembers, UseVoiceActivity)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u002244040192\u0022,Speak, DeafenMembers, UseVoiceActivity)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d3b64a05-6fdc-31c7-c6a3-4bc00da8da2d"
@@ -4841,6 +4970,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildVerificationLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildVerificationLevel\\\\DiscordGuildVerificationLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2ff2e629-2897-6ce0-4a56-e19585c48b29"
@@ -4855,6 +4985,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildData\\\\DiscordGuildData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildData\\\\DiscordGuildData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "07a9d178-a42d-1f05-b521-46cc8b4e76dd"
@@ -4869,6 +5000,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5800dbec-8b1b-899f-667f-ccae16ee7795"
@@ -4883,6 +5015,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2f5a92e4-0450-cde9-dcc9-b36f292ff2b8"
@@ -4897,6 +5030,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionRequestData\\\\DiscordInteractionCommandData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionRequestData\\\\DiscordInteractionCommandData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "013d885d-222f-b543-3ec1-474f983d3422"
@@ -4911,6 +5045,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildVerificationLevelTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "da70a23a-3971-2e35-588d-5896daa31330"
@@ -4925,6 +5060,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordSessionStartLimitDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSessionStartLimitData\\\\DiscordSessionStartLimitData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSessionStartLimitData\\\\DiscordSessionStartLimitData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "34a4e5fb-1a2a-5f22-8b0b-2cd6ceeeaf1a"
@@ -4939,6 +5075,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0c0fa5c2-f2a8-3e23-08e0-5e5d827016b2"
@@ -4953,6 +5090,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandOptionDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionData\\\\DiscordApplicationCommandOptionData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionData\\\\DiscordApplicationCommandOptionData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "73983873-b742-2c8f-08ab-f5e0944e43f7"
@@ -4967,6 +5105,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDefaultMessageNotificationLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "203e71dc-76ec-4b31-89eb-5a8bdc708c6c"
@@ -4981,6 +5120,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(ManageMessages)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(ManageMessages)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "384ef78c-d6d6-7d8c-f02d-ca5b9f08914b"
@@ -4995,6 +5135,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission5.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission5.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "731922dc-7264-bae1-0621-efb20a584836"
@@ -5009,6 +5150,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "73123aba-f756-f359-21fb-53be890b3e16"
@@ -5023,6 +5165,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedProviderDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "57d7332d-bfb8-ef08-48c8-f52d24fabfcb"
@@ -5037,6 +5180,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u002222020096\u0022,Connect, MuteMembers, MoveMembers)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u002222020096\u0022,Connect, MuteMembers, MoveMembers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "674d95a0-0c22-25d8-78ea-cb5b1c320944"
@@ -5051,6 +5195,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(KickMembers, BanMembers, Administrator, ManageGuild, ViewAuditLog, SendMessages, ViewGuildInsights, ChangeNickname, ManageEmojisAndStickers)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(KickMembers, BanMembers, Administrator, ManageGuild, ViewAuditLog, SendMessages, ViewGuildInsights, ChangeNickname, ManageEmojisAndStickers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ceabd407-dfa4-0f36-8839-d5e340a7c9ba"
@@ -5065,6 +5210,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPremiumTierTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPremiumTier\\\\DiscordGuildPremiumTier2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2ca4452c-25a5-ec03-7cd6-e1643f04ec68"
@@ -5079,6 +5225,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedImageDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedImageData\\\\DiscordEmbedImageData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedImageData\\\\DiscordEmbedImageData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d7feecf9-f0fe-52cb-a88e-9d7231f0e520"
@@ -5093,6 +5240,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedVideoDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedVideoData\\\\DiscordEmbedVideoData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedVideoData\\\\DiscordEmbedVideoData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "298a5ed7-c3ad-1afa-2418-3a25d327ffb3"
@@ -5107,6 +5255,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordEmojiDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmojiData\\\\DiscordEmojiData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmojiData\\\\DiscordEmojiData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "968166f0-9d62-e3f2-fb13-d98c368b928d"
@@ -5121,6 +5270,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d9633b1e-c18f-5977-9c99-93210e43095f"
@@ -5135,6 +5285,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "1928a437-7136-c6a9-5d09-d2b797c1f5a3"
@@ -5149,6 +5300,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "005aa952-d349-5e3c-e1c8-baa660159f73"
@@ -5163,6 +5315,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPreviewDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPreviewData\\\\DiscordGuildPreviewData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPreviewData\\\\DiscordGuildPreviewData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "3f52fce5-e568-be4b-f076-779cafb3026d"
@@ -5177,6 +5330,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "650e5ab6-a5a5-eabb-b40c-e4eea3c6c1f3"
@@ -5191,6 +5345,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordEmojiDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmojiData\\\\DiscordEmojiData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmojiData\\\\DiscordEmojiData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "78c62b6e-a310-45dc-2fec-ad57732059f3"
@@ -5205,6 +5360,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildMfaLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMfaLevel\\\\DiscordGuildMfaLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMfaLevel\\\\DiscordGuildMfaLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "e5962e04-9634-ee61-9542-256487d9b2f4"
@@ -5219,6 +5375,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u0022349184\u0022,ViewChannel, SendTtsMessages, EmbedLinks, ReadMessageHistory, UseExternalEmojis)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u0022349184\u0022,ViewChannel, SendTtsMessages, EmbedLinks, ReadMessageHistory, UseExternalEmojis)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "32a4246f-db36-52c9-bf0f-0a2401360e43"
@@ -5233,6 +5390,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.DiscordJsonErrorDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0f72c52e-c5fc-74a1-c283-139ef2c15a6e"
@@ -5247,6 +5405,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u00221409286155\u0022,CreateInstantInvite, KickMembers, Administrator, ChangeNickname, ManageRoles, ManageEmojisAndStickers)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u00221409286155\u0022,CreateInstantInvite, KickMembers, Administrator, ChangeNickname, ManageRoles, ManageEmojisAndStickers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "4372b8e4-b7e0-3df6-2b43-151d1d102d9a"
@@ -5261,6 +5420,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedThumbnailDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedThumbnailData\\\\DiscordEmbedThumbnailData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedThumbnailData\\\\DiscordEmbedThumbnailData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ed8a8612-289a-9556-d390-8decfe8efad0"
@@ -5275,6 +5435,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordSessionStartLimitDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSessionStartLimitData\\\\DiscordSessionStartLimitData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSessionStartLimitData\\\\DiscordSessionStartLimitData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "71d6bde6-240c-f6ba-2883-e7d5612a7e66"
@@ -5289,6 +5450,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDefaultMessageNotificationLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "b71680cb-ce54-9754-7ed4-e4cc7c0b99e7"
@@ -5303,6 +5465,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c975a9fb-03c2-0d08-ab99-70145587a5be"
@@ -5317,6 +5480,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildRoleDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildRoleData\\\\DiscordGuildRoleData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildRoleData\\\\DiscordGuildRoleData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "bb04dd02-e725-5842-ade2-8b3e9f5c6e18"
@@ -5331,6 +5495,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(KickMembers, ManageGuild, AttachFiles, ViewGuildInsights)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(KickMembers, ManageGuild, AttachFiles, ViewGuildInsights)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "fd872bde-f0ee-825f-95e7-a4e0cffbb52e"
@@ -5345,6 +5510,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeChannelDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "6ee1028e-412a-4331-9475-e76e5258c64c"
@@ -5359,6 +5525,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(BanMembers, Administrator, Stream)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(BanMembers, Administrator, Stream)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "8e46d51a-e09c-9bf5-27bd-0ac9ec9b5471"
@@ -5373,6 +5540,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.PropertyErrorInfoDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "271f5018-1d65-d45f-eafd-70b0e8f9b354"
@@ -5387,6 +5555,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "cffa9c11-cfb9-57b5-ccd7-2ea9183e286f"
@@ -5401,6 +5570,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "2a128d5f-6b77-732d-f230-776aeeac8a67"
@@ -5415,6 +5585,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(UseVoiceActivity)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(UseVoiceActivity)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "639ebc8b-32f3-ca7a-3c04-e9953d29a4f1"
@@ -5429,6 +5600,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionResponseDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "77eb5277-3e47-63b0-62a8-ebfd71f510b4"
@@ -5443,6 +5615,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(ManageChannels)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(ManageChannels)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c2af2b2d-29f5-1a52-c14b-a8f995d4f343"
@@ -5457,6 +5630,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPreviewDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPreviewData\\\\DiscordGuildPreviewData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildPreviewData\\\\DiscordGuildPreviewData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "740426cc-f7dd-90ba-cebf-2882248588f7"
@@ -5471,6 +5645,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandCallbackDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "f6dbf89e-fa4e-e173-c281-bba0dca74ebc"
@@ -5485,6 +5660,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordGatewayBotDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGatewayBotData\\\\DiscordGatewayBotData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGatewayBotData\\\\DiscordGatewayBotData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "07d5e449-51be-1b2a-0189-3d4ca365efc6"
@@ -5499,6 +5675,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandOptionDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionData\\\\DiscordApplicationCommandOptionData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionData\\\\DiscordApplicationCommandOptionData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "95c1c548-0c5b-7054-077c-b29fba60795c"
@@ -5513,6 +5690,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedProviderDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedProviderData\\\\DiscordEmbedProviderData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedProviderData\\\\DiscordEmbedProviderData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "d0305b3d-560b-62fa-c664-861165daa30b"
@@ -5527,6 +5705,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandData\\\\DiscordApplicationCommandData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandData\\\\DiscordApplicationCommandData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "98a56148-f2e3-3d95-323c-c0876ce60294"
@@ -5541,6 +5720,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(PrioritySpeaker, ChangeNickname)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(PrioritySpeaker, ChangeNickname)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "98c8c94a-7174-b6ef-759e-2c3b096d627e"
@@ -5555,6 +5735,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedData\\\\DiscordEmbedData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "be335907-e276-92ec-d065-dcab7da258ff"
@@ -5569,6 +5750,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c8119497-0e09-4423-f55c-d800f241565f"
@@ -5583,6 +5765,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeChannelDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeChannelData\\\\DiscordGuildWelcomeChannelData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeChannelData\\\\DiscordGuildWelcomeChannelData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "cc33bae5-4123-252e-023b-565a1620e821"
@@ -5597,6 +5780,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u00226442975488\u0022,PrioritySpeaker, ViewGuildInsights, UseApplicationCommands, RequestToSpeak)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u00226442975488\u0022,PrioritySpeaker, ViewGuildInsights, UseApplicationCommands, RequestToSpeak)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0835ef1e-ac74-35d4-c6a8-b9ca956eea57"
@@ -5611,6 +5795,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeScreenDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData2json.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData2json.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "902b89d3-2ada-40f6-ee62-d405f5c53104"
@@ -5625,6 +5810,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildMemberTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "b7a0d774-8950-bce0-354f-5b7018a1d98e"
@@ -5639,6 +5825,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildMemberDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMemberData\\\\DiscordGuildMemberData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildMemberData\\\\DiscordGuildMemberData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ebc15621-2221-8f09-9c5f-234d1d3f2576"
@@ -5653,6 +5840,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyCurrentUserNickTests",
         "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyCurrentUserNick\\\\DiscordModifyCurrentUserNick.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/Params/DiscordModifyCurrentUserNick\\\\DiscordModifyCurrentUserNick.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "5f6f4291-8321-68d2-8a0c-1cc81ce13917"
@@ -5667,6 +5855,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission4.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission4.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "454deb08-d413-29b1-c4b8-f6cf34cb6b3f"
@@ -5681,6 +5870,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildWelcomeScreenDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData2json.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildWelcomeScreenData\\\\DiscordGuildWelcomeScreenData2json.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "53e6e38f-f0fa-a89a-7480-68f47253c1e1"
@@ -5695,6 +5885,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildPremiumTierTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ccc33ad5-2ee9-fb84-3d43-da74d08fcce4"
@@ -5709,6 +5900,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_span(\u00221409286155\u0022,CreateInstantInvite, KickMembers, Administrator, ChangeNickname, ManageRoles, ManageEmojisAndStickers)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_span(\u00221409286155\u0022,CreateInstantInvite, KickMembers, Administrator, ChangeNickname, ManageRoles, ManageEmojisAndStickers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "a0635f25-2b2e-8970-917e-82d573e2eecd"
@@ -5723,6 +5915,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "09899108-0c42-724b-6822-9041a68fffb1"
@@ -5737,6 +5930,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData4.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData4.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "b2e53ef4-b4a6-50eb-7903-3dd0eb8f6edc"
@@ -5751,6 +5945,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionCommandResolvedDataTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResolvedData\\\\DiscordInteractionCommandResolvedData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "ee4fec26-8b09-ce46-e26b-32abe695f61c"
@@ -5765,6 +5960,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Extensions.GuildPermissionExtensionsTests",
         "Name": "Should_parse_permissions_string(\u002222020096\u0022,Connect, MuteMembers, MoveMembers)"
       },
+      "TestCategory": null,
       "Name": "Should_parse_permissions_string(\u002222020096\u0022,Connect, MuteMembers, MoveMembers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "89bd1c76-0f24-8f6e-d7ad-00508404e42d"
@@ -5779,6 +5975,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildRoleTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildRole\\\\DiscordModifyGuildRole2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "f814ce8c-e9a5-109f-626b-3a6cb66030e2"
@@ -5793,6 +5990,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandOptionChoiceDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionChoiceData\\\\DiscordApplicationCommandOptionChoiceData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordApplicationCommandOptionChoiceData\\\\DiscordApplicationCommandOptionChoiceData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "896d696a-1d74-5603-5035-c46e23931239"
@@ -5807,6 +6005,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Application.DiscordApplicationCommandOptionChoiceDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "6627a0ae-2d1c-bcac-95af-9324cc2be4fa"
@@ -5821,6 +6020,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedThumbnailDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "1479c1b2-55dc-01ea-ca44-4f8f40f0c049"
@@ -5835,6 +6035,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildExplicitContentFilterLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildExplicitContentFilterLevel\\\\DiscordGuildExplicitContentFilterLevel3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "aabe5c93-f097-10f0-49be-b6f449a621fa"
@@ -5849,6 +6050,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionResponseDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionResponseData\\\\DiscordInteractionResponseData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "a3d5592a-92b1-d4d7-bea1-53eccb05ee54"
@@ -5863,6 +6065,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyCurrentUserNickTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyCurrentUserNick\\\\DiscordModifyCurrentUserNick.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyCurrentUserNick\\\\DiscordModifyCurrentUserNick.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "8c1ba848-b933-e28d-b709-c01a320ec13e"
@@ -5877,6 +6080,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordSystemChannelFlagsTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags3.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordSystemChannelFlags\\\\DiscordSystemChannelFlags3.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "04540c15-1e76-fc7d-cb76-2f4b86b6aed2"
@@ -5891,6 +6095,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.Params.Guild.DiscordModifyGuildMemberTests",
         "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildMember\\\\DiscordModifyGuildMember.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_serialize_and_deserialize(\u0022TestJson/API/Params/DiscordModifyGuildMember\\\\DiscordModifyGuildMember.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "6030577d-ddb0-94d4-563d-626273eafc4f"
@@ -5905,6 +6110,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordInteractionData\\\\DiscordInteractionData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "e18fba36-f205-e036-9232-ce444ee9be9e"
@@ -5919,6 +6125,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildNsfwLevelTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "69c5f135-0036-e923-09dc-155292663842"
@@ -5933,6 +6140,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(ManageWebhooks, UseExternalStickers)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(ManageWebhooks, UseExternalStickers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "c660400d-95d2-176e-0d96-3bb7f4f94e0e"
@@ -5947,6 +6155,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission4.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission4.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "28084b9a-95df-2d6b-789c-632f302c25bd"
@@ -5961,6 +6170,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.DiscordPermissionTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordPermission\\\\DiscordGuildPermission.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "0a8e59d2-6776-76f0-af12-ed2cf97234a4"
@@ -5975,6 +6185,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Extensions.DiscordPermissionExtensionsTests",
         "Name": "HasChannelPermissions_should_detect_channel_perm(MuteMembers)"
       },
+      "TestCategory": null,
       "Name": "HasChannelPermissions_should_detect_channel_perm(MuteMembers)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "dd12d886-732d-ddfb-41c2-c656f8ba9a32"
@@ -5989,6 +6200,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Interaction.DiscordInteractionDataTests",
         "Name": "Should_serialize"
       },
+      "TestCategory": null,
       "Name": "Should_serialize",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "092bbca7-33a6-533a-0d2e-d7261d4e1b2d"
@@ -6003,6 +6215,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Embed.DiscordEmbedAuthorDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedAuthorData\\\\DiscordEmbedAuthorData.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordEmbedAuthorData\\\\DiscordEmbedAuthorData.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "f4d21801-3f97-b7f6-d31e-2c4e9b283bcb"
@@ -6017,6 +6230,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Errors.DiscordJsonErrorDataTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordJsonErrorData\\\\DiscordJsonErrorData2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "e0c640c2-8cd6-b9af-bc59-2609230ea379"
@@ -6031,6 +6245,7 @@
         "ClassName": "Color_Chan.Discord.Core.Tests.Common.API.DataModels.Guild.DiscordGuildDefaultMessageNotificationLevelTests",
         "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel2.json\u0022)"
       },
+      "TestCategory": null,
       "Name": "Should_deserialize(\u0022TestJson/API/DataModels/DiscordGuildDefaultMessageNotificationLevel\\\\DiscordGuildDefaultMessageNotificationLevel2.json\u0022)",
       "Storage": "f:\\github\\color-chan.discord\\tests\\color-chan.discord.core.tests\\bin\\debug\\net8.0\\color-chan.discord.core.tests.dll",
       "Id": "6f6544fc-fcf6-18ba-3714-2ab754292d7b"
@@ -7152,3 +7367,4 @@
   "Name": "test 2025-02-11 17:41:50",
   "RunUser": "test"
 }
+

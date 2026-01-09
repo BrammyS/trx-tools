@@ -8,6 +8,7 @@ public record ParsedUnitTestResult(
     string Class,
     string Name,
     string Codebase,
+    string Category,
     TimeSpan Duration,
     UnitTestResultOutput Output
 )

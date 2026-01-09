@@ -39,12 +39,15 @@ public class TestRunParserService(ILogger<TestRunParserService> logger) : ITestR
                 throw new TestIdsMismatchException($"Test ID mismatch between test entry and test result. Test entry ID: {testEntry.TestId}, Test result ID: {testResult.TestId}");
             }
 
+            var category = unitTest.TestCategory?.TestCategoryItems.FirstOrDefault()?.TestCategory ?? string.Empty;
+
             parsedResults.Add(new ParsedUnitTestResult(
                 testResult.Outcome == "Passed",
                 testResult.Outcome,
                 unitTest.TestMethod.ClassName,
                 unitTest.TestMethod.Name,
                 unitTest.TestMethod.CodeBase,
+                category,
                 TimeSpan.Parse(testResult.Duration),
                 testResult.Output
             ));

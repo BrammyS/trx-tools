@@ -321,4 +321,84 @@ public class TestRunParserServiceTests
         firstResult.Name.Should().Be("MethodName");
         firstResult.Duration.Should().Be(TimeSpan.FromSeconds(1));
     }
+
+    [Test]
+    public void ParseTestRun_When_TestResult_Has_Category_Parses_ResultWithCategory()
+    {
+        // Arrange
+        var mockLogger = new Mock<ILogger<TestRunParserService>>();
+        var service = new TestRunParserService(mockLogger.Object);
+        var testRun = new TestRun
+        {
+            TestEntries =
+            [
+                new TestEntry
+                {
+                    TestId = "TestId",
+                    ExecutionId = "ExecutionId",
+                    TestListId = null!
+                }
+            ],
+            TestDefinitions =
+            [
+                new UnitTest
+                {
+                    Id = "TestId",
+                    Name = "TestName",
+                    TestMethod = new TestMethod
+                    {
+                        ClassName = "ClassName",
+                        Name = "MethodName",
+                        CodeBase = null!,
+                        AdapterTypeName = null!
+                    },
+                    Execution = new Execution
+                    {
+                        Id = "ExecutionId"
+                    },
+                    Storage = null!,
+                    TestCategory = new TestCategory
+                    {
+                        TestCategoryItems = [new TestCategoryItem { TestCategory = "MyCategory" }]
+                    }
+                }
+            ],
+            Results =
+            [
+                new UnitTestResult
+                {
+                    TestId = "TestId",
+                    ExecutionId = "ExecutionId",
+                    Outcome = "Passed",
+                    Duration = "00:00:01",
+                    Output = null!,
+                    TestName = null!,
+                    ComputerName = null!,
+                    TestType = null!,
+                    TestListId = null!,
+                    RelativeResultsDirectory = null!
+                }
+            ],
+            Times = null!,
+            TestSettings = null!,
+            TestLists = [],
+            ResultSummary = new ResultSummary
+            {
+                Counters = new Counters { Total = 1, Passed = 1, Executed = 1 },
+                Output = null!,
+                Outcome = "Passed",
+                RunInfos = []
+            },
+            Id = "1",
+            Name = "testName",
+            RunUser = "RunUser"
+        };
+
+        // Act
+        var result = service.ParseTestRun(testRun);
+
+        // Assert
+        result.Results.Should().HaveCount(1);
+        result.Results[0].Category.Should().Be("MyCategory");
+    }
 }
