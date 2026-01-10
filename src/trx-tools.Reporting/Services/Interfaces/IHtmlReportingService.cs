@@ -1,6 +1,8 @@
 ﻿namespace trx_tools.HtmlReporting.Services.Interfaces;
 
+
 public interface IHtmlReportingService
 {
-    Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, bool latestOnly = false, IEnumerable<string>? onlyFiles = null);
+    public record ReportOptions(bool latestTrxOnly=false, IEnumerable<string>? onlyFiles=null);
+    Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, ReportOptions? options = default);
 }

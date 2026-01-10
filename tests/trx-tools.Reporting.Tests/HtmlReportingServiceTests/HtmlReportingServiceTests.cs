@@ -8,6 +8,7 @@ using trx_tools.Core.Models.Results;
 using trx_tools.Core.Models.ResultSummary;
 using trx_tools.Core.Services.Interfaces;
 using trx_tools.HtmlReporting.Services;
+using trx_tools.HtmlReporting.Services.Interfaces;
 
 namespace trx_tools.HtmlReporting.Tests.HtmlReportingServiceTests;
 
@@ -85,7 +86,7 @@ public class HtmlReportingServiceTests
             var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
 
             // Act
-            await service.GenerateHtmlReportAsync("dir", htmlFile, latestOnly: true);
+            await service.GenerateHtmlReportAsync("dir", htmlFile, new IHtmlReportingService.ReportOptions(latestTrxOnly: true));
 
             // Assert
             mockTestRunTrxFileService.Verify(x => x.ReadTestRun(file2), Times.Once);
@@ -136,7 +137,7 @@ public class HtmlReportingServiceTests
         var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
 
         // Act
-        await service.GenerateHtmlReportAsync("dir", htmlFile, onlyFiles: [file1]);
+        await service.GenerateHtmlReportAsync("dir", htmlFile, new IHtmlReportingService.ReportOptions(onlyFiles: [file1]));
 
         // Assert
         mockTestRunTrxFileService.Verify(x => x.ReadTestRun(It.Is<string>(s => s.Contains(file1))), Times.Once);

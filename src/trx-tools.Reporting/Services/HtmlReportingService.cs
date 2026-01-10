@@ -14,12 +14,13 @@ public class HtmlReportingService(
     ITestRunParserService parserService
 ) : IHtmlReportingService
 {
-    public async Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, bool latestOnly = false, IEnumerable<string>? onlyFiles = null)
+    public async Task GenerateHtmlReportAsync(string trxDirectory, string outputFile, IHtmlReportingService.ReportOptions? options = default)
     {
+        options ??=new();
         string[] trxFiles;
-        if (onlyFiles != null && onlyFiles.Any())
+        if (options.onlyFiles?.Any() == true)
         {
-            trxFiles = onlyFiles.ToArray();
+            trxFiles = options.onlyFiles.ToArray();
         }
         else
         {
@@ -32,7 +33,7 @@ public class HtmlReportingService(
             return;
         }
 
-        if (latestOnly)
+        if (options.latestTrxOnly)
         {
             trxFiles = [trxFiles.OrderByDescending(File.GetLastWriteTime).First()];
         }

@@ -9,67 +9,62 @@ public class HtmlCommand(ILogger<HtmlCommand> logger, IHtmlReportingService html
     public string Name => "html";
     public string Description => "Generate HTML report from TRX file(s). Example: trx-tools.Reporting html path/to/trx/directory output.html [--only-latest] [--only-files file1.trx file2.trx]";
 
-    public async Task ExecuteAsync(string[] args)
+    public async Task ExecuteAsync(CLIArgHandler args)
     {
-        if (!ValidateInput(args)) return;
+        var unamedArgs = args.GetInitialUnnamedArgs();
+        if (!ValidateInput(unamedArgs))
+            return;
 
-        var trxDirectory = args[0];
-        var outputFile = args[1];
-        var latestOnly = args.Contains("--only-latest");
-        var onlyFiles = ParseOnlyFiles(args, trxDirectory);
+        var trxDirectory = unamedArgs[0];
+        var outputFile = unamedArgs[1];
 
-        await htmlReportingService.GenerateHtmlReportAsync(trxDirectory, outputFile, latestOnly, onlyFiles);
-    }
-
-    private static List<string>? ParseOnlyFiles(string[] args, string trxDirectory)
-    {
-        var onlyFiles = new List<string>();
-        
-        for (var i = 2; i < args.Length; i++)
+        var onlyFiles = args.GetOptArr("only-files");
+        if (onlyFiles?.Length > 0)
         {
-            if (args[i] == "--only-files")
-            {
-                // Read all files until we hit another -- argument or end of args
-                for (var j = i + 1; j < args.Length && !args[j].StartsWith("--"); j++)
-                {
-                    var filePath = args[j];
-                    
-                    // If path is rooted, use it as-is
-                    if (Path.IsPathRooted(filePath))
-                    {
-                        onlyFiles.Add(filePath);
-                    }
-                    else
-                    {
-                        // Try combining with trx directory first
-                        var combinedPath = Path.Combine(Directory.GetCurrentDirectory(), trxDirectory, filePath);
-                        if (File.Exists(combinedPath))
-                        {
-                            onlyFiles.Add(combinedPath);
-                        }
-                        else
-                        {
-                            // Fall back to working directory
-                            onlyFiles.Add(Path.Combine(Directory.GetCurrentDirectory(), filePath));
-                        }
-                    }
-                }
-                break;
-            }
+            ResolveFilePaths(trxDirectory, onlyFiles);
+            var missingFiles = onlyFiles.Where(f => !File.Exists(f)).ToList();
+            if (missingFiles.Any())
+                throw new FileNotFoundException($"The following files specified in --only-files could not be resolved: {string.Join(", ", missingFiles)}");
         }
 
-        return onlyFiles.Count > 0 ? onlyFiles : null;
+        await htmlReportingService.GenerateHtmlReportAsync(trxDirectory, outputFile, new() { latestTrxOnly = args.GetFlag("only-latest"), onlyFiles = onlyFiles });
     }
 
-    private bool ValidateInput(string[] args)
+    private void ResolveFilePaths(string trxDirectory, string[] onlyFiles)
     {
-        if (args.Length < 2)
+        for (var i = 0; i < onlyFiles.Length; i++)
+        {
+            var filePath = onlyFiles[i];
+
+            // If path is rooted, use it as-is
+            if (Path.IsPathRooted(filePath))
+                continue;
+            else
+            {
+                // Try combining with trx directory first
+                var combinedPath = Path.Combine(Directory.GetCurrentDirectory(), trxDirectory, filePath);
+                if (File.Exists(combinedPath))
+                    onlyFiles[i] = combinedPath;
+                else                    // Fall back to working directory
+
+                    onlyFiles[i] = Path.Combine(Directory.GetCurrentDirectory(), filePath);
+
+            }
+        }
+    }
+
+
+
+    private bool ValidateInput(string[] unamedArgs)
+    {
+
+        if (unamedArgs.Length != 2)
         {
             logger.LogError("Invalid number of arguments provided, see help command for example");
             return false;
         }
-        
-        if (!args[1].EndsWith(".html"))
+
+        if (!unamedArgs[1].EndsWith(".html"))
         {
             logger.LogError("Output file must be an HTML file");
             return false;

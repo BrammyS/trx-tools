@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
+using trx_tools.Commands;
 using trx_tools.HtmlReporting.Commands;
 using trx_tools.HtmlReporting.Services.Interfaces;
 
@@ -50,10 +51,10 @@ public class HtmlCommandTests
         var args = new[] { "path/to/trx/directory", "output.html" };
 
         // Act
-        await command.ExecuteAsync(args);
+        await command.ExecuteAsync(new CLIArgHandler(args));
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1], false, null), Times.Once);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(args[0], args[1], It.Is<IHtmlReportingService.ReportOptions>(o => o.latestTrxOnly == false && (o.onlyFiles == null || !o.onlyFiles.Any()))), Times.Once);
     }
     
     [Test]
@@ -66,10 +67,10 @@ public class HtmlCommandTests
         var args = new[] { "path/to/trx/directory" };
 
         // Act
-        await command.ExecuteAsync(args);
+        await command.ExecuteAsync(new CLIArgHandler(args));
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>()), Times.Never);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<IHtmlReportingService.ReportOptions>()), Times.Never);
     }
     
     [Test]
@@ -82,9 +83,9 @@ public class HtmlCommandTests
         var args = new[] { "path/to/trx/directory", "output.txt" };
 
         // Act
-        await command.ExecuteAsync(args);
+        await command.ExecuteAsync(new CLIArgHandler(args));
 
         // Assert
-        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<IEnumerable<string>>()), Times.Never);
+        mockIHtmlReportingService.Verify(x => x.GenerateHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<IHtmlReportingService.ReportOptions>()), Times.Never);
     }
 }
