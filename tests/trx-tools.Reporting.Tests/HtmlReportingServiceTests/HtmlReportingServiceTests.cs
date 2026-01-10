@@ -46,57 +46,51 @@ public class HtmlReportingServiceTests
     {
         // Arrange
         const string htmlFile = "output.html";
+        const string olderFile = "older.trx";
+        const string newerFile = "newer.trx";
         var mockLogger = new Mock<ILogger<HtmlReportingService>>();
         var mockTestRunTrxFileService = new Mock<ITestRunTrxFileService>();
-        
-        var file1 = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".trx");
-        var file2 = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".trx");
-        File.WriteAllText(file1, "old");
-        File.SetLastWriteTime(file1, DateTime.Now.AddDays(-1));
-        File.WriteAllText(file2, "new");
-        File.SetLastWriteTime(file2, DateTime.Now);
 
-        try
+        // Mock file discovery
+        mockTestRunTrxFileService.Setup(x => x.FindTrxFilesInDirectory(It.IsAny<string>())).Returns([olderFile, newerFile]);
+
+        // Mock file timestamps - newerFile is more recent
+        mockTestRunTrxFileService.Setup(x => x.GetFileLastWriteTime(olderFile)).Returns(DateTime.Now.AddDays(-1));
+        mockTestRunTrxFileService.Setup(x => x.GetFileLastWriteTime(newerFile)).Returns(DateTime.Now);
+
+        // Mock reading the newer file (which should be selected)
+        mockTestRunTrxFileService.Setup(x => x.ReadTestRun(newerFile)).Returns(new Core.Models.TestRun
         {
-            mockTestRunTrxFileService.Setup(x => x.FindTrxFilesInDirectory(It.IsAny<string>())).Returns([file1, file2]);
-            mockTestRunTrxFileService.Setup(x => x.ReadTestRun(file2)).Returns(new Core.Models.TestRun 
-            { 
-                RunUser = "test",
-                Times = null,
-                TestSettings = null,
-                Results = [],
-                TestDefinitions = [],
-                TestEntries = [],
-                TestLists = [],
-                ResultSummary = new Core.Models.ResultSummary.ResultSummary
-                {
-                    Counters = new Core.Models.ResultSummary.Counters(),
-                    Output = null,
-                    Outcome = "Completed",
-                    RunInfos = []
-                },
-                Id = "test-id",
-                Name = "test-name"
-            });
-            mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
-            
-            var mockTestRunParserService = new Mock<ITestRunParserService>();
-            mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
-            var mockTestRunMergerService = new Mock<ITestRunMergerService>();
-            var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
+            RunUser = "test",
+            Times = null,
+            TestSettings = null,
+            Results = [],
+            TestDefinitions = [],
+            TestEntries = [],
+            TestLists = [],
+            ResultSummary = new Core.Models.ResultSummary.ResultSummary
+            {
+                Counters = new Core.Models.ResultSummary.Counters(),
+                Output = null,
+                Outcome = "Completed",
+                RunInfos = []
+            },
+            Id = "test-id",
+            Name = "test-name"
+        });
+        mockTestRunTrxFileService.Setup(x => x.WriteHtmlReportAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.CompletedTask);
 
-            // Act
-            await service.GenerateHtmlReportAsync("dir", htmlFile, new IHtmlReportingService.ReportOptions(latestTrxOnly: true));
+        var mockTestRunParserService = new Mock<ITestRunParserService>();
+        mockTestRunParserService.Setup(x => x.ParseTestRun(It.IsAny<Core.Models.TestRun>())).Returns(GetFakeParsedTestRun());
+        var mockTestRunMergerService = new Mock<ITestRunMergerService>();
+        var service = new HtmlReportingService(mockLogger.Object, mockTestRunTrxFileService.Object, mockTestRunMergerService.Object, mockTestRunParserService.Object);
 
-            // Assert
-            mockTestRunTrxFileService.Verify(x => x.ReadTestRun(file2), Times.Once);
-            mockTestRunTrxFileService.Verify(x => x.ReadTestRun(file1), Times.Never);
-        }
-        finally
-        {
-            if (File.Exists(file1)) File.Delete(file1);
-            if (File.Exists(file2)) File.Delete(file2);
-        }
+        // Act
+        await service.GenerateHtmlReportAsync("dir", htmlFile, new IHtmlReportingService.ReportOptions(latestTrxOnly: true));
+
+        // Assert - only the newer file should be read
+        mockTestRunTrxFileService.Verify(x => x.ReadTestRun(newerFile), Times.Once);
+        mockTestRunTrxFileService.Verify(x => x.ReadTestRun(olderFile), Times.Never);
     }
 
     [Test]

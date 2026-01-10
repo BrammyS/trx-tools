@@ -35,7 +35,7 @@ public class HtmlReportingService(
 
         if (options.latestTrxOnly)
         {
-            trxFiles = [trxFiles.OrderByDescending(File.GetLastWriteTime).First()];
+            trxFiles = [trxFiles.OrderByDescending(fileService.GetFileLastWriteTime).First()];
         }
 
         var testRun = GetTestRun(trxFiles);
