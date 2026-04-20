@@ -31,4 +31,8 @@ public class TestRunTrxFileService(ILogger<TestRunTrxFileService> logger) : ITes
         logger.LogInformation("Writing HTML report to {Path}", path);
         return File.WriteAllTextAsync(path, html);
     }
+
+    public bool FileExists(string path) => File.Exists(path);
+
+    public DateTime GetFileLastWriteTime(string path) => File.GetLastWriteTime(path);
 }
