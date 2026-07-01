@@ -28,7 +28,7 @@ public class CommandHandler(ILogger<CommandHandler> logger, IEnumerable<ICommand
             return;
         }
 
-        await command.ExecuteAsync(args);
+        await command.ExecuteAsync(new CLIArgHandler(args));
     }
 
     private void PrintHelp()

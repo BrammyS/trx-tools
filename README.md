@@ -122,6 +122,22 @@ To generate a report from a TRX file, use the following command:
 trx-tools.Reporting html "path/to/trxFolder" "path/to/output/file.html"
 ```
 
+#### Filtering Options
+
+You can filter which TRX files are included in the report using the following optional flags:
+
+**`--only-latest`** - Only use the most recently modified TRX file:
+```sh
+trx-tools.Reporting html "path/to/trxFolder" "report.html" --only-latest
+```
+
+**`--only-files`** - Specify specific TRX files to include (reads all files until the next `--` flag):
+```sh
+trx-tools.Reporting html "path/to/trxFolder" "report.html" --only-files test1.trx test2.trx
+```
+
+The `--only-files` option supports both absolute and relative paths. Relative paths are first tried against the trx directory, then fall back to the current working directory.
+
 
 <!-- ROADMAP -->
 ## Roadmap
